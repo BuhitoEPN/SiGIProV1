@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.bAgregar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -48,6 +46,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.bAgregar = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -105,41 +105,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1080, 609);
             this.tableLayoutPanel1.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.label1, 7);
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(381, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(372, 30);
-            this.label1.TabIndex = 43;
-            this.label1.Text = "Agregar Nuevo Cliente";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // bAgregar
-            // 
-            this.bAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.bAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.tableLayoutPanel1.SetColumnSpan(this.bAgregar, 4);
-            this.bAgregar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.bAgregar.FlatAppearance.BorderSize = 0;
-            this.bAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.bAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bAgregar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bAgregar.ForeColor = System.Drawing.Color.Gainsboro;
-            this.bAgregar.Location = new System.Drawing.Point(813, 554);
-            this.bAgregar.Name = "bAgregar";
-            this.tableLayoutPanel1.SetRowSpan(this.bAgregar, 2);
-            this.bAgregar.Size = new System.Drawing.Size(210, 40);
-            this.bAgregar.TabIndex = 88;
-            this.bAgregar.Text = "Agregar";
-            this.bAgregar.UseVisualStyleBackColor = false;
             // 
             // groupBox1
             // 
@@ -375,9 +340,9 @@
             this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label5.Location = new System.Drawing.Point(58, 149);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(156, 21);
+            this.label5.Size = new System.Drawing.Size(129, 21);
             this.label5.TabIndex = 58;
-            this.label5.Text = "Apellido (Paterno):";
+            this.label5.Text = "Primer Apellido:";
             // 
             // label2
             // 
@@ -392,6 +357,41 @@
             this.label2.Size = new System.Drawing.Size(195, 21);
             this.label2.TabIndex = 56;
             this.label2.Text = "Cédula de Ciudadanía:";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.label1, 7);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label1.Location = new System.Drawing.Point(381, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(372, 30);
+            this.label1.TabIndex = 43;
+            this.label1.Text = "Agregar Nuevo Cliente";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // bAgregar
+            // 
+            this.bAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.bAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.tableLayoutPanel1.SetColumnSpan(this.bAgregar, 4);
+            this.bAgregar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.bAgregar.FlatAppearance.BorderSize = 0;
+            this.bAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.bAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bAgregar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bAgregar.ForeColor = System.Drawing.Color.Gainsboro;
+            this.bAgregar.Location = new System.Drawing.Point(813, 554);
+            this.bAgregar.Name = "bAgregar";
+            this.tableLayoutPanel1.SetRowSpan(this.bAgregar, 2);
+            this.bAgregar.Size = new System.Drawing.Size(210, 40);
+            this.bAgregar.TabIndex = 88;
+            this.bAgregar.Text = "Agregar";
+            this.bAgregar.UseVisualStyleBackColor = false;
             // 
             // AgregarCliente
             // 

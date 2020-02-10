@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.bBuscar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.bAgregar = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.bBuscar = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -106,6 +106,22 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1080, 609);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
+            // bBuscar
+            // 
+            this.bBuscar.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.tableLayoutPanel1.SetColumnSpan(this.bBuscar, 3);
+            this.bBuscar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.bBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bBuscar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bBuscar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.bBuscar.Location = new System.Drawing.Point(867, 93);
+            this.bBuscar.Name = "bBuscar";
+            this.tableLayoutPanel1.SetRowSpan(this.bBuscar, 2);
+            this.bBuscar.Size = new System.Drawing.Size(153, 40);
+            this.bBuscar.TabIndex = 96;
+            this.bBuscar.Text = "Buscar";
+            this.bBuscar.UseVisualStyleBackColor = false;
+            // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -141,35 +157,21 @@
             this.bAgregar.Text = "Agregar";
             this.bAgregar.UseVisualStyleBackColor = false;
             // 
-            // label4
+            // label3
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.label4, 4);
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label4.Location = new System.Drawing.Point(57, 180);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(210, 30);
-            this.label4.TabIndex = 89;
-            this.label4.Text = "Código Categoría:";
-            // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.label5, 4);
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.Location = new System.Drawing.Point(381, 180);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(210, 30);
-            this.label5.TabIndex = 91;
-            this.label5.Text = "CATnnn";
+            this.label3.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.label3, 4);
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label3.Location = new System.Drawing.Point(57, 360);
+            this.label3.Name = "label3";
+            this.tableLayoutPanel1.SetRowSpan(this.label3, 2);
+            this.label3.Size = new System.Drawing.Size(210, 60);
+            this.label3.TabIndex = 92;
+            this.label3.Text = "Descripción de la Categoría:";
             // 
             // label2
             // 
@@ -186,35 +188,35 @@
             this.label2.TabIndex = 90;
             this.label2.Text = "Nombre de la Categoría:";
             // 
-            // textBox1
+            // label4
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(90)))), ((int)(((byte)(144)))));
-            this.tableLayoutPanel1.SetColumnSpan(this.textBox1, 11);
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.textBox1.Location = new System.Drawing.Point(381, 273);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(588, 27);
-            this.textBox1.TabIndex = 85;
+            this.label4.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.label4, 4);
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label4.Location = new System.Drawing.Point(57, 180);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(210, 30);
+            this.label4.TabIndex = 89;
+            this.label4.Text = "Código Categoría:";
             // 
-            // label3
+            // label6
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.label3, 4);
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label3.Location = new System.Drawing.Point(57, 360);
-            this.label3.Name = "label3";
-            this.tableLayoutPanel1.SetRowSpan(this.label3, 2);
-            this.label3.Size = new System.Drawing.Size(210, 60);
-            this.label3.TabIndex = 92;
-            this.label3.Text = "Descripción de la Categoría:";
+            this.label6.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.label6, 5);
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label6.Location = new System.Drawing.Point(57, 90);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(264, 30);
+            this.label6.TabIndex = 94;
+            this.label6.Text = "Buscar Código Categoría:";
             // 
             // textBox2
             // 
@@ -232,20 +234,34 @@
             this.textBox2.Size = new System.Drawing.Size(588, 144);
             this.textBox2.TabIndex = 93;
             // 
-            // label6
+            // textBox1
             // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.label6, 5);
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label6.Location = new System.Drawing.Point(57, 90);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(264, 30);
-            this.label6.TabIndex = 94;
-            this.label6.Text = "Buscar Código Categoría:";
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(90)))), ((int)(((byte)(144)))));
+            this.tableLayoutPanel1.SetColumnSpan(this.textBox1, 11);
+            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.textBox1.Location = new System.Drawing.Point(381, 273);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(588, 27);
+            this.textBox1.TabIndex = 85;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.label5, 4);
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label5.Location = new System.Drawing.Point(381, 180);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(210, 30);
+            this.label5.TabIndex = 91;
+            this.label5.Text = "CATnnn";
             // 
             // textBox3
             // 
@@ -260,22 +276,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(426, 27);
             this.textBox3.TabIndex = 95;
-            // 
-            // bBuscar
-            // 
-            this.bBuscar.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.tableLayoutPanel1.SetColumnSpan(this.bBuscar, 3);
-            this.bBuscar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.bBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bBuscar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bBuscar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.bBuscar.Location = new System.Drawing.Point(867, 93);
-            this.bBuscar.Name = "bBuscar";
-            this.tableLayoutPanel1.SetRowSpan(this.bBuscar, 2);
-            this.bBuscar.Size = new System.Drawing.Size(153, 40);
-            this.bBuscar.TabIndex = 96;
-            this.bBuscar.Text = "Buscar";
-            this.bBuscar.UseVisualStyleBackColor = false;
             // 
             // ActualizarCategoria
             // 

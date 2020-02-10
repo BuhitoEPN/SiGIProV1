@@ -79,7 +79,7 @@
             this.tableLayoutPanel1.Controls.Add(this.bBuscar, 16, 2);
             this.tableLayoutPanel1.Controls.Add(this.groupBox1, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.textBox1, 5, 3);
-            this.tableLayoutPanel1.Controls.Add(this.bActualizar, 16, 19);
+            this.tableLayoutPanel1.Controls.Add(this.bActualizar, 16, 18);
             this.tableLayoutPanel1.Controls.Add(this.label4, 1, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -105,6 +105,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1080, 609);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
@@ -339,19 +340,17 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(90)))), ((int)(((byte)(144)))));
-            this.tableLayoutPanel1.SetColumnSpan(this.textBox1, 10);
+            this.tableLayoutPanel1.SetColumnSpan(this.textBox1, 9);
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.textBox1.Location = new System.Drawing.Point(273, 93);
+            this.textBox1.Location = new System.Drawing.Point(327, 93);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(534, 27);
+            this.textBox1.Size = new System.Drawing.Size(480, 27);
             this.textBox1.TabIndex = 85;
             // 
             // bActualizar
             // 
-            this.bActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.bActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.bActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.tableLayoutPanel1.SetColumnSpan(this.bActualizar, 3);
             this.bActualizar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
@@ -360,9 +359,10 @@
             this.bActualizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bActualizar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bActualizar.ForeColor = System.Drawing.Color.Gainsboro;
-            this.bActualizar.Location = new System.Drawing.Point(867, 573);
+            this.bActualizar.Location = new System.Drawing.Point(867, 552);
             this.bActualizar.Name = "bActualizar";
-            this.bActualizar.Size = new System.Drawing.Size(156, 33);
+            this.tableLayoutPanel1.SetRowSpan(this.bActualizar, 2);
+            this.bActualizar.Size = new System.Drawing.Size(156, 45);
             this.bActualizar.TabIndex = 88;
             this.bActualizar.Text = "Actualizar";
             this.bActualizar.UseVisualStyleBackColor = false;
@@ -370,14 +370,14 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.label4, 4);
+            this.tableLayoutPanel1.SetColumnSpan(this.label4, 5);
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label4.Location = new System.Drawing.Point(57, 90);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(160, 21);
+            this.label4.Size = new System.Drawing.Size(215, 21);
             this.label4.TabIndex = 89;
-            this.label4.Text = "RUC del Proveedor:";
+            this.label4.Text = "Buscar RUC del Proveedor:";
             // 
             // ActualizarProveedor
             // 

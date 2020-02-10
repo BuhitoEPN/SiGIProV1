@@ -16,6 +16,7 @@ using SiGIProV1.Vistas.Categoría;
 using SiGIProV1.Vistas.Categoria;
 using SiGIProV1.Vistas.Producción;
 using SiGIProV1.Vistas.Clientes;
+using SiGIProV1.Vistas.Ventas;
 
 namespace SiGIProV1
 {
@@ -154,7 +155,7 @@ namespace SiGIProV1
         ------------------------------------------------------*/
         private void registrarPedidoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            controlInterfaz.OpenChildForm(new GenerarOrden(), currentChildForm, panelEscritorio);
         }
         /*------------------------------------------------------
         * -------------------EMPLEADO---------------------------

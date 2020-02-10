@@ -77,7 +77,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4F));
             this.tableLayoutPanel1.Controls.Add(this.groupBox1, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.label4, 10, 1);
-            this.tableLayoutPanel1.Controls.Add(this.bRegistrar, 18, 24);
+            this.tableLayoutPanel1.Controls.Add(this.bRegistrar, 19, 23);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -289,20 +289,19 @@
             // 
             // bRegistrar
             // 
-            this.bRegistrar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.bRegistrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.bRegistrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.tableLayoutPanel1.SetColumnSpan(this.bRegistrar, 6);
+            this.tableLayoutPanel1.SetColumnSpan(this.bRegistrar, 5);
             this.bRegistrar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.bRegistrar.FlatAppearance.BorderSize = 0;
             this.bRegistrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.bRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bRegistrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bRegistrar.ForeColor = System.Drawing.Color.Gainsboro;
-            this.bRegistrar.Location = new System.Drawing.Point(777, 579);
+            this.bRegistrar.Location = new System.Drawing.Point(820, 561);
             this.bRegistrar.Name = "bRegistrar";
-            this.bRegistrar.Size = new System.Drawing.Size(252, 33);
+            this.tableLayoutPanel1.SetRowSpan(this.bRegistrar, 2);
+            this.bRegistrar.Size = new System.Drawing.Size(209, 45);
             this.bRegistrar.TabIndex = 48;
             this.bRegistrar.Text = "Agregar";
             this.bRegistrar.UseVisualStyleBackColor = false;

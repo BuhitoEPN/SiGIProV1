@@ -164,6 +164,12 @@
     <Compile Include="Vistas\Proveedores\AgregarProveedor.Designer.cs">
       <DependentUpon>AgregarProveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Ventas\GenerarOrden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Ventas\GenerarOrden.Designer.cs">
+      <DependentUpon>GenerarOrden.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -229,6 +235,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Proveedores\AgregarProveedor.resx">
       <DependentUpon>AgregarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Ventas\GenerarOrden.resx">
+      <DependentUpon>GenerarOrden.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
