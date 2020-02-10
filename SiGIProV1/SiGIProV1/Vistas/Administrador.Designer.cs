@@ -64,6 +64,10 @@
             this.consultarEmpleadoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.actualizarEmpleadoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.panelEscritorio = new System.Windows.Forms.Panel();
+            this.categoríaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.agregarCategoríaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarCategoríaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.actualizarCategoríaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelTitulo.SuspendLayout();
             this.menuSuperior.SuspendLayout();
             this.SuspendLayout();
@@ -161,6 +165,7 @@
             this.homeToolStripMenuItem,
             this.proveedores,
             this.inventarios,
+            this.categoríaToolStripMenuItem,
             this.ventasToolStripMenuItem,
             this.clienteToolStripMenuItem,
             this.clientesToolStripMenuItem,
@@ -174,6 +179,7 @@
             // 
             // homeToolStripMenuItem
             // 
+            this.homeToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homeToolStripMenuItem.ForeColor = System.Drawing.Color.Gainsboro;
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
             this.homeToolStripMenuItem.Size = new System.Drawing.Size(68, 25);
@@ -452,6 +458,44 @@
             this.panelEscritorio.Size = new System.Drawing.Size(1080, 609);
             this.panelEscritorio.TabIndex = 6;
             // 
+            // categoríaToolStripMenuItem
+            // 
+            this.categoríaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.agregarCategoríaToolStripMenuItem,
+            this.consultarCategoríaToolStripMenuItem,
+            this.actualizarCategoríaToolStripMenuItem});
+            this.categoríaToolStripMenuItem.ForeColor = System.Drawing.Color.Gainsboro;
+            this.categoríaToolStripMenuItem.Name = "categoríaToolStripMenuItem";
+            this.categoríaToolStripMenuItem.Size = new System.Drawing.Size(103, 25);
+            this.categoríaToolStripMenuItem.Text = "Categoría";
+            // 
+            // agregarCategoríaToolStripMenuItem
+            // 
+            this.agregarCategoríaToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(45)))), ((int)(((byte)(95)))));
+            this.agregarCategoríaToolStripMenuItem.ForeColor = System.Drawing.Color.Gainsboro;
+            this.agregarCategoríaToolStripMenuItem.Name = "agregarCategoríaToolStripMenuItem";
+            this.agregarCategoríaToolStripMenuItem.Size = new System.Drawing.Size(245, 26);
+            this.agregarCategoríaToolStripMenuItem.Text = "Agregar Categoría";
+            this.agregarCategoríaToolStripMenuItem.Click += new System.EventHandler(this.agregarCategoríaToolStripMenuItem_Click);
+            // 
+            // consultarCategoríaToolStripMenuItem
+            // 
+            this.consultarCategoríaToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(45)))), ((int)(((byte)(95)))));
+            this.consultarCategoríaToolStripMenuItem.ForeColor = System.Drawing.Color.Gainsboro;
+            this.consultarCategoríaToolStripMenuItem.Name = "consultarCategoríaToolStripMenuItem";
+            this.consultarCategoríaToolStripMenuItem.Size = new System.Drawing.Size(245, 26);
+            this.consultarCategoríaToolStripMenuItem.Text = "Consultar Categoría";
+            this.consultarCategoríaToolStripMenuItem.Click += new System.EventHandler(this.consultarCategoríaToolStripMenuItem_Click);
+            // 
+            // actualizarCategoríaToolStripMenuItem
+            // 
+            this.actualizarCategoríaToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(45)))), ((int)(((byte)(95)))));
+            this.actualizarCategoríaToolStripMenuItem.ForeColor = System.Drawing.Color.Gainsboro;
+            this.actualizarCategoríaToolStripMenuItem.Name = "actualizarCategoríaToolStripMenuItem";
+            this.actualizarCategoríaToolStripMenuItem.Size = new System.Drawing.Size(245, 26);
+            this.actualizarCategoríaToolStripMenuItem.Text = "Actualizar Categoría";
+            this.actualizarCategoríaToolStripMenuItem.Click += new System.EventHandler(this.actualizarCategoríaToolStripMenuItem_Click);
+            // 
             // Administrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -508,6 +552,10 @@
         private System.Windows.Forms.ToolStripMenuItem agregarEmpleadoToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem consultarEmpleadoToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem actualizarEmpleadoToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem categoríaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem agregarCategoríaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultarCategoríaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem actualizarCategoríaToolStripMenuItem;
     }
 }
 

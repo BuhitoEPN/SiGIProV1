@@ -79,7 +79,7 @@
             this.tableLayoutPanel1.Controls.Add(this.bBuscar, 16, 2);
             this.tableLayoutPanel1.Controls.Add(this.groupBox1, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.textBox1, 5, 3);
-            this.tableLayoutPanel1.Controls.Add(this.bActualizar, 15, 19);
+            this.tableLayoutPanel1.Controls.Add(this.bActualizar, 16, 19);
             this.tableLayoutPanel1.Controls.Add(this.label4, 1, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -176,9 +176,9 @@
             this.label12.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label12.Location = new System.Drawing.Point(274, 36);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(162, 21);
+            this.label12.Size = new System.Drawing.Size(217, 21);
             this.label12.TabIndex = 79;
-            this.label12.Text = "RUC del proveedor.";
+            this.label12.Text = "Buscar RUC del proveedor.";
             // 
             // label9
             // 
@@ -353,16 +353,16 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.tableLayoutPanel1.SetColumnSpan(this.bActualizar, 4);
+            this.tableLayoutPanel1.SetColumnSpan(this.bActualizar, 3);
             this.bActualizar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.bActualizar.FlatAppearance.BorderSize = 0;
             this.bActualizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.bActualizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bActualizar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bActualizar.ForeColor = System.Drawing.Color.Gainsboro;
-            this.bActualizar.Location = new System.Drawing.Point(813, 573);
+            this.bActualizar.Location = new System.Drawing.Point(867, 573);
             this.bActualizar.Name = "bActualizar";
-            this.bActualizar.Size = new System.Drawing.Size(210, 33);
+            this.bActualizar.Size = new System.Drawing.Size(156, 33);
             this.bActualizar.TabIndex = 88;
             this.bActualizar.Text = "Actualizar";
             this.bActualizar.UseVisualStyleBackColor = false;

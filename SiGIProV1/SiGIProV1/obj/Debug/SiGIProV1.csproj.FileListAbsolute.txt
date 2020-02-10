@@ -24,3 +24,14 @@ C:\Users\ALEX\Documents\GitHub\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1
 C:\Users\ALEX\Documents\GitHub\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Proveedores.ConsultarProveedor.resources
 C:\Users\ALEX\Documents\GitHub\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Inventarios.ConsultarMateriaPrima.resources
 C:\Users\ALEX\Documents\GitHub\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Inventarios.ActualizarMateriaPrima.resources
+C:\Users\ALEX\Documents\GitHub\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Inventarios.ElaborarMateriaPrima.resources
+C:\Users\ALEX\Documents\GitHub\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Inventarios.ConsultarProducto.resources
+C:\Users\ALEX\Documents\GitHub\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Categoría.AgregarCategoria.resources
+C:\Users\ALEX\Documents\GitHub\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Categoria.ConsultarCategoria.resources
+C:\Users\ALEX\Documents\GitHub\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Categoria.ActualizarCategoria.resources
+C:\Users\ALEX\Documents\GitHub\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Producción.AgregarProducto.resources
+C:\Users\ALEX\Documents\GitHub\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Producción.EscogerMateriaPrima.resources
+C:\Users\ALEX\Documents\GitHub\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Producción.ActualizarProducto.resources
+C:\Users\ALEX\Documents\GitHub\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Clientes.AgregarCliente.resources
+C:\Users\ALEX\Documents\GitHub\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Clientes.ConsultarCliente.resources
+C:\Users\ALEX\Documents\GitHub\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Clientes.ActualizarCliente.resources

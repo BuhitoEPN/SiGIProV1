@@ -12,6 +12,10 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using SiGIProV1.Vistas;
 using SiGIProV1.Vistas.Inventarios;
+using SiGIProV1.Vistas.Categoría;
+using SiGIProV1.Vistas.Categoria;
+using SiGIProV1.Vistas.Producción;
+using SiGIProV1.Vistas.Clientes;
 
 namespace SiGIProV1
 {
@@ -78,52 +82,72 @@ namespace SiGIProV1
 
         private void agregarStockDeMateriaPrimaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            controlInterfaz.OpenChildForm(new ElaborarMateriaPrima(), currentChildForm, panelEscritorio);
         }
         //INVENTARIO PRODUCTOS:
         private void consultarProductosTerminadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            controlInterfaz.OpenChildForm(new ConsultarProducto(), currentChildForm, panelEscritorio);
         }
 
         /*------------------------------------------------------
         * -------------------PRODUCCIÓN-----------------------
         ------------------------------------------------------*/
+
+        //CATEGORÍA:
+        private void agregarCategoríaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlInterfaz.OpenChildForm(new AgregarCategoria(), currentChildForm, panelEscritorio);
+        }
+
+        private void consultarCategoríaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlInterfaz.OpenChildForm(new ConsultarCategoria(), currentChildForm, panelEscritorio);
+        }
+
+        private void actualizarCategoríaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlInterfaz.OpenChildForm(new ActualizarCategoria(), currentChildForm, panelEscritorio);
+        }
+
+        //PRODUCCIÓN:
         private void agregarNuevoProductoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            controlInterfaz.OpenChildForm(new AgregarProducto(), currentChildForm, panelEscritorio);
         }
 
         private void consultarProductoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            controlInterfaz.OpenChildForm(new ConsultarProducto(), currentChildForm, panelEscritorio);
         }
 
         private void actualizarProductoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            controlInterfaz.OpenChildForm(new ActualizarProducto(), currentChildForm, panelEscritorio);
         }
 
         private void elaborarLoteProductosToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
+
+
         /*------------------------------------------------------
         * -------------------CLIENTE----------------------------
         ------------------------------------------------------*/
         private void agregarClienteToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            controlInterfaz.OpenChildForm(new AgregarCliente(), currentChildForm, panelEscritorio);
         }
 
         private void consultarClienteToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            controlInterfaz.OpenChildForm(new ConsultarCliente(), currentChildForm, panelEscritorio);
         }
 
         private void actualizarClienteToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            controlInterfaz.OpenChildForm(new ActualizarCliente(), currentChildForm, panelEscritorio);
         }
         /*------------------------------------------------------
         * -------------------VENTAS-----------------------------
@@ -195,5 +219,7 @@ namespace SiGIProV1
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+
     }
 }

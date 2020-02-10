@@ -267,9 +267,9 @@
             this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label2.Location = new System.Drawing.Point(58, 78);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 21);
+            this.label2.Size = new System.Drawing.Size(48, 21);
             this.label2.TabIndex = 56;
-            this.label2.Text = "RUC";
+            this.label2.Text = "RUC:";
             // 
             // label4
             // 

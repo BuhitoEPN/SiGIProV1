@@ -56,6 +56,42 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vistas\Categoria\ActualizarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Categoria\ActualizarCategoria.Designer.cs">
+      <DependentUpon>ActualizarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Categoria\AgregarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Categoria\AgregarCategoria.Designer.cs">
+      <DependentUpon>AgregarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Categoria\ConsultarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Categoria\ConsultarCategoria.Designer.cs">
+      <DependentUpon>ConsultarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Clientes\ActualizarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Clientes\ActualizarCliente.Designer.cs">
+      <DependentUpon>ActualizarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Clientes\AgregarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Clientes\AgregarCliente.Designer.cs">
+      <DependentUpon>AgregarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Clientes\ConsultarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Clientes\ConsultarCliente.Designer.cs">
+      <DependentUpon>ConsultarCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\HomeAdministrador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +115,36 @@
     </Compile>
     <Compile Include="Vistas\Inventarios\ConsultarMateriaPrima.Designer.cs">
       <DependentUpon>ConsultarMateriaPrima.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Inventarios\ConsultarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Inventarios\ConsultarProducto.Designer.cs">
+      <DependentUpon>ConsultarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Inventarios\ElaborarMateriaPrima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Inventarios\ElaborarMateriaPrima.Designer.cs">
+      <DependentUpon>ElaborarMateriaPrima.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Producción\ActualizarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Producción\ActualizarProducto.Designer.cs">
+      <DependentUpon>ActualizarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Producción\AgregarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Producción\AgregarProducto.Designer.cs">
+      <DependentUpon>AgregarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Producción\EscogerMateriaPrima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Producción\EscogerMateriaPrima.Designer.cs">
+      <DependentUpon>EscogerMateriaPrima.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Proveedores\ActualizarProveedor.cs">
       <SubType>Form</SubType>
@@ -110,6 +176,24 @@
     <EmbeddedResource Include="Vistas\Administrador.resx">
       <DependentUpon>Administrador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Categoria\ActualizarCategoria.resx">
+      <DependentUpon>ActualizarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Categoria\AgregarCategoria.resx">
+      <DependentUpon>AgregarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Categoria\ConsultarCategoria.resx">
+      <DependentUpon>ConsultarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Clientes\ActualizarCliente.resx">
+      <DependentUpon>ActualizarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Clientes\AgregarCliente.resx">
+      <DependentUpon>AgregarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Clientes\ConsultarCliente.resx">
+      <DependentUpon>ConsultarCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\HomeAdministrador.resx">
       <DependentUpon>HomeAdministrador.cs</DependentUpon>
     </EmbeddedResource>
@@ -121,6 +205,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Inventarios\ConsultarMateriaPrima.resx">
       <DependentUpon>ConsultarMateriaPrima.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Inventarios\ConsultarProducto.resx">
+      <DependentUpon>ConsultarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Inventarios\ElaborarMateriaPrima.resx">
+      <DependentUpon>ElaborarMateriaPrima.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Producción\ActualizarProducto.resx">
+      <DependentUpon>ActualizarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Producción\AgregarProducto.resx">
+      <DependentUpon>AgregarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Producción\EscogerMateriaPrima.resx">
+      <DependentUpon>EscogerMateriaPrima.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Proveedores\ActualizarProveedor.resx">
       <DependentUpon>ActualizarProveedor.cs</DependentUpon>
