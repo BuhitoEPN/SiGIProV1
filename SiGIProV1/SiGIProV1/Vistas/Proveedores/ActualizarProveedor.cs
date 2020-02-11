@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace SiGIProV1.Vistas.Proveedores
 {
+    //Controlador.ControlProveedor controlProveedor;
     public partial class ActualizarProveedor : Form
     {
         public ActualizarProveedor()
         {
             InitializeComponent();
+        }
+
+        private void bBuscar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
