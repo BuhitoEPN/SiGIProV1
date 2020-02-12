@@ -18,20 +18,10 @@ namespace SiGIProV1.Vistas.Proveedores
             InitializeComponent();
         }
 
-
-        private void vaciarTextBox()
-        {
-            textBoxRuc.Text = "";
-            textBoxNombre.Text = "";
-            textBoxDireccion.Text = "";
-            textBoxCorreo.Text = "";
-            textBoxTelefono.Text = "";
-        }
-
         private void textBoxRuc_KeyPress(object sender, KeyPressEventArgs e)
         {
-            controlProveedor = new Controlador.ControlProveedor();
-            controlProveedor.verificarCampoRUC(e, labelErrorRUC, textBoxRuc);
+            //controlProveedor = new Controlador.ControlProveedor();
+           // controlProveedor.verificarCampoRUC(e, labelErrorRUC, textBoxRuc);
         }
 
         private void textBoxNombre_KeyPress(object sender, KeyPressEventArgs e)
@@ -54,8 +44,7 @@ namespace SiGIProV1.Vistas.Proveedores
         private void bRegistrar_Click(object sender, EventArgs e)
         {
             controlProveedor = new Controlador.ControlProveedor();
-            controlProveedor.agregarProveedor(textBoxRuc.Text, textBoxNombre.Text, textBoxDireccion.Text, textBoxCorreo.Text, textBoxTelefono.Text);
-            vaciarTextBox();
+            controlProveedor.agregarProveedor(textBoxRuc, textBoxNombre, textBoxDireccion, textBoxCorreo, textBoxTelefono, labelErrorRUC, labelErrorTelefono, labelErrorCorreo);
         }
     }
 }

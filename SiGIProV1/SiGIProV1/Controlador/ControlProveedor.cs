@@ -14,11 +14,30 @@ namespace SiGIProV1.Controlador
     {
         private DAOProveedor daoProveedor;
         private Proveedor proveedor;
-        public void agregarProveedor(string ruc, string nombreProveedor, string direccionProveedor, string correoElectronico, string telefonoMovil)
+        public void agregarProveedor(TextBox ruc, TextBox nombreProveedor, TextBox direccionProveedor, TextBox correoElectronico, TextBox telefonoMovil, Label errorRuc, Label errorTelefono, Label errorCorreo)
         {
-            daoProveedor = new DAOProveedor();
-            proveedor = new Proveedor(ruc, nombreProveedor, direccionProveedor, telefonoMovil, "ACTIVO", correoElectronico);
-            daoProveedor.agregarProveedor(proveedor);
+            if (ruc.Text.Equals("") && nombreProveedor.Text.Equals("") && direccionProveedor.Text.Equals("") && correoElectronico.Text.Equals("") && telefonoMovil.Text.Equals(""))
+            {
+                MessageBox.Show("Existen campos vacíos.");
+            }
+            else
+            {
+                if (errorRuc.Visible || errorCorreo.Visible || errorTelefono.Visible)
+                {
+                    MessageBox.Show("Existen campos con errores.");
+                }
+                else
+                {
+                    daoProveedor = new DAOProveedor();
+                    proveedor = new Proveedor(ruc.Text, nombreProveedor.Text, direccionProveedor.Text, telefonoMovil.Text, "ACTIVO", correoElectronico.Text);
+                    daoProveedor.agregarProveedor(proveedor);
+                    ruc.Text = "";
+                    nombreProveedor.Text = "";
+                    direccionProveedor.Text = "";
+                    telefonoMovil.Text = "";
+                    correoElectronico.Text = "";
+                }
+            }
         }
 
         public DataTable listarProveedores()
@@ -99,9 +118,16 @@ namespace SiGIProV1.Controlador
         {
             ControlValidaciones controlValidaciones = new ControlValidaciones();
             controlValidaciones.validarCamposNumericos(evt);
-            /*if (controlValidaciones.verificarCedula(ruc.Text){
-
-            }*/
+            daoProveedor = new DAOProveedor();
+            if (daoProveedor.comprobarRUC(ruc.Text))
+            {
+                error.Visible = true;
+                MessageBox.Show("Ya existe un proveedor con el RUC: " + ruc.Text + ".");
+            }
+            else
+            {
+                error.Visible = false;
+            }
         }
 
         public void verificarCampoLetras(KeyPressEventArgs evt)
