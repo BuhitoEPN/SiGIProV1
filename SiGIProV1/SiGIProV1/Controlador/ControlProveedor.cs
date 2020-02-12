@@ -31,6 +31,7 @@ namespace SiGIProV1.Controlador
                     daoProveedor = new DAOProveedor();
                     proveedor = new Proveedor(ruc.Text, nombreProveedor.Text, direccionProveedor.Text, telefonoMovil.Text, "ACTIVO", correoElectronico.Text);
                     daoProveedor.agregarProveedor(proveedor);
+                    MessageBox.Show("Proveedor registrado con éxito.");
                     ruc.Text = "";
                     nombreProveedor.Text = "";
                     direccionProveedor.Text = "";

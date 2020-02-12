@@ -20,8 +20,8 @@ namespace SiGIProV1.Vistas.Proveedores
 
         private void textBoxRuc_KeyPress(object sender, KeyPressEventArgs e)
         {
-            //controlProveedor = new Controlador.ControlProveedor();
-           // controlProveedor.verificarCampoRUC(e, labelErrorRUC, textBoxRuc);
+            controlProveedor = new Controlador.ControlProveedor();
+            controlProveedor.verificarCampoRUC(e, labelErrorRUC, textBoxRuc);
         }
 
         private void textBoxNombre_KeyPress(object sender, KeyPressEventArgs e)

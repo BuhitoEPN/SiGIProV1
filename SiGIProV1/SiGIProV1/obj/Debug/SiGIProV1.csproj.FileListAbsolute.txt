@@ -92,3 +92,7 @@ D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Ve
 D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.csproj.GenerateResource.cache
 D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.exe
 D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.pdb
+C:\Users\ALEX\Documents\GitHub\SiGIProV1\SiGIProV1\SiGIProV1\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\ALEX\Documents\GitHub\SiGIProV1\SiGIProV1\SiGIProV1\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\ALEX\Documents\GitHub\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Login.resources
+C:\Users\ALEX\Documents\GitHub\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.csproj.CopyComplete
