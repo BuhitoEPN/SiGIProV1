@@ -33,11 +33,11 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dGVProveedores = new System.Windows.Forms.DataGridView();
-            this.tNombreDelProducto = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBoxProveedor = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.tNombreDelProducto = new System.Windows.Forms.TextBox();
+            this.comboBoxProveedor = new System.Windows.Forms.ComboBox();
             this.bBuscar = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -72,12 +72,12 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.Controls.Add(this.groupBox1, 1, 7);
-            this.tableLayoutPanel1.Controls.Add(this.tNombreDelProducto, 4, 3);
             this.tableLayoutPanel1.Controls.Add(this.label4, 8, 1);
-            this.tableLayoutPanel1.Controls.Add(this.comboBoxProveedor, 4, 5);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.bBuscar, 16, 3);
+            this.tableLayoutPanel1.Controls.Add(this.label2, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.tNombreDelProducto, 4, 5);
+            this.tableLayoutPanel1.Controls.Add(this.comboBoxProveedor, 4, 3);
+            this.tableLayoutPanel1.Controls.Add(this.bBuscar, 16, 5);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(-1, -1);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 21;
@@ -154,22 +154,6 @@
             this.dGVProveedores.Size = new System.Drawing.Size(920, 312);
             this.dGVProveedores.TabIndex = 0;
             // 
-            // tNombreDelProducto
-            // 
-            this.tNombreDelProducto.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tNombreDelProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(90)))), ((int)(((byte)(144)))));
-            this.tableLayoutPanel1.SetColumnSpan(this.tNombreDelProducto, 11);
-            this.tNombreDelProducto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tNombreDelProducto.ForeColor = System.Drawing.Color.Gainsboro;
-            this.tNombreDelProducto.Location = new System.Drawing.Point(219, 91);
-            this.tNombreDelProducto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tNombreDelProducto.MaxLength = 30;
-            this.tNombreDelProducto.Name = "tNombreDelProducto";
-            this.tNombreDelProducto.Size = new System.Drawing.Size(588, 27);
-            this.tNombreDelProducto.TabIndex = 33;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -178,27 +162,9 @@
             this.label4.ForeColor = System.Drawing.Color.Gainsboro;
             this.label4.Location = new System.Drawing.Point(435, 29);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(273, 28);
+            this.label4.Size = new System.Drawing.Size(265, 28);
             this.label4.TabIndex = 37;
-            this.label4.Text = "Consultar Proveedores";
-            // 
-            // comboBoxProveedor
-            // 
-            this.comboBoxProveedor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBoxProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(90)))), ((int)(((byte)(144)))));
-            this.tableLayoutPanel1.SetColumnSpan(this.comboBoxProveedor, 5);
-            this.comboBoxProveedor.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxProveedor.ForeColor = System.Drawing.Color.Gainsboro;
-            this.comboBoxProveedor.FormattingEnabled = true;
-            this.comboBoxProveedor.Items.AddRange(new object[] {
-            "RUC",
-            "Nombre"});
-            this.comboBoxProveedor.Location = new System.Drawing.Point(219, 148);
-            this.comboBoxProveedor.Name = "comboBoxProveedor";
-            this.comboBoxProveedor.Size = new System.Drawing.Size(264, 29);
-            this.comboBoxProveedor.TabIndex = 39;
-            this.comboBoxProveedor.Text = "Seleccionar";
+            this.label4.Text = "Consulta Proveedores";
             // 
             // label2
             // 
@@ -209,7 +175,7 @@
             this.tableLayoutPanel1.SetColumnSpan(this.label2, 2);
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(57, 87);
+            this.label2.Location = new System.Drawing.Point(57, 145);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 29);
             this.label2.TabIndex = 57;
@@ -224,11 +190,45 @@
             this.tableLayoutPanel1.SetColumnSpan(this.label1, 2);
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(57, 145);
+            this.label1.Location = new System.Drawing.Point(57, 87);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(102, 29);
             this.label1.TabIndex = 58;
             this.label1.Text = "Filtrar por:";
+            // 
+            // tNombreDelProducto
+            // 
+            this.tNombreDelProducto.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tNombreDelProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(90)))), ((int)(((byte)(144)))));
+            this.tableLayoutPanel1.SetColumnSpan(this.tNombreDelProducto, 11);
+            this.tNombreDelProducto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tNombreDelProducto.ForeColor = System.Drawing.Color.Gainsboro;
+            this.tNombreDelProducto.Location = new System.Drawing.Point(219, 149);
+            this.tNombreDelProducto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tNombreDelProducto.MaxLength = 30;
+            this.tNombreDelProducto.Name = "tNombreDelProducto";
+            this.tNombreDelProducto.Size = new System.Drawing.Size(588, 27);
+            this.tNombreDelProducto.TabIndex = 33;
+            // 
+            // comboBoxProveedor
+            // 
+            this.comboBoxProveedor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBoxProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(90)))), ((int)(((byte)(144)))));
+            this.tableLayoutPanel1.SetColumnSpan(this.comboBoxProveedor, 5);
+            this.comboBoxProveedor.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxProveedor.ForeColor = System.Drawing.Color.Gainsboro;
+            this.comboBoxProveedor.FormattingEnabled = true;
+            this.comboBoxProveedor.Items.AddRange(new object[] {
+            "RUC",
+            "Nombre"});
+            this.comboBoxProveedor.Location = new System.Drawing.Point(219, 90);
+            this.comboBoxProveedor.Name = "comboBoxProveedor";
+            this.comboBoxProveedor.Size = new System.Drawing.Size(264, 29);
+            this.comboBoxProveedor.TabIndex = 39;
+            this.comboBoxProveedor.Text = "Seleccionar";
             // 
             // bBuscar
             // 
@@ -238,7 +238,7 @@
             this.bBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bBuscar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bBuscar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.bBuscar.Location = new System.Drawing.Point(867, 90);
+            this.bBuscar.Location = new System.Drawing.Point(867, 148);
             this.bBuscar.Name = "bBuscar";
             this.tableLayoutPanel1.SetRowSpan(this.bBuscar, 2);
             this.bBuscar.Size = new System.Drawing.Size(153, 40);

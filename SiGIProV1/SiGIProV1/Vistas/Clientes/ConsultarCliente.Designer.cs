@@ -70,12 +70,12 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.Controls.Add(this.groupBox1, 1, 7);
-            this.tableLayoutPanel1.Controls.Add(this.tNombreDelProducto, 4, 3);
             this.tableLayoutPanel1.Controls.Add(this.label4, 8, 1);
-            this.tableLayoutPanel1.Controls.Add(this.bBuscar, 16, 3);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox1, 4, 5);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.label2, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.tNombreDelProducto, 4, 5);
+            this.tableLayoutPanel1.Controls.Add(this.comboBox1, 4, 3);
+            this.tableLayoutPanel1.Controls.Add(this.bBuscar, 16, 5);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(-1, -4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 21;
@@ -141,7 +141,7 @@
             this.tableLayoutPanel1.SetColumnSpan(this.tNombreDelProducto, 11);
             this.tNombreDelProducto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tNombreDelProducto.ForeColor = System.Drawing.Color.Gainsboro;
-            this.tNombreDelProducto.Location = new System.Drawing.Point(219, 91);
+            this.tNombreDelProducto.Location = new System.Drawing.Point(219, 149);
             this.tNombreDelProducto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tNombreDelProducto.Name = "tNombreDelProducto";
             this.tNombreDelProducto.Size = new System.Drawing.Size(588, 27);
@@ -168,7 +168,7 @@
             this.bBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bBuscar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bBuscar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.bBuscar.Location = new System.Drawing.Point(867, 90);
+            this.bBuscar.Location = new System.Drawing.Point(867, 148);
             this.bBuscar.Name = "bBuscar";
             this.tableLayoutPanel1.SetRowSpan(this.bBuscar, 2);
             this.bBuscar.Size = new System.Drawing.Size(153, 40);
@@ -185,7 +185,7 @@
             this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.ForeColor = System.Drawing.Color.Gainsboro;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(219, 148);
+            this.comboBox1.Location = new System.Drawing.Point(219, 90);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(264, 29);
             this.comboBox1.TabIndex = 39;
@@ -200,7 +200,7 @@
             this.tableLayoutPanel1.SetColumnSpan(this.label2, 2);
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(57, 87);
+            this.label2.Location = new System.Drawing.Point(57, 145);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 29);
             this.label2.TabIndex = 57;
@@ -215,7 +215,7 @@
             this.tableLayoutPanel1.SetColumnSpan(this.label1, 2);
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(57, 145);
+            this.label1.Location = new System.Drawing.Point(57, 87);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(102, 29);
             this.label1.TabIndex = 58;
