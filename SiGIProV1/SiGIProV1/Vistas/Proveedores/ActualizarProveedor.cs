@@ -13,6 +13,7 @@ namespace SiGIProV1.Vistas.Proveedores
     //Controlador.ControlProveedor controlProveedor;
     public partial class ActualizarProveedor : Form
     {
+        Controlador.ControlProveedor controlProveedor;
         public ActualizarProveedor()
         {
             InitializeComponent();
@@ -20,7 +21,15 @@ namespace SiGIProV1.Vistas.Proveedores
 
         private void bBuscar_Click(object sender, EventArgs e)
         {
+            controlProveedor = new Controlador.ControlProveedor();
+            controlProveedor.buscarProveedor(textBoxRUCBuscar, labelRUC, textBoxNombre, textBoxDireccion, textBoxCorreo, comboBoxEstado, textBoxTelefono);
 
         }
+
+        private void bActualizar_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

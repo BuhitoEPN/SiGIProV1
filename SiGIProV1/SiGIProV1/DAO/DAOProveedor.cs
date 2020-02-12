@@ -1,4 +1,5 @@
 ﻿using SiGIProV1.Conexion;
+using SiGIProV1.Modelo;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -12,7 +13,9 @@ namespace SiGIProV1.DAO
     class DAOProveedor : ConnectionToSql
     {
         private SqlDataReader leerFilas;
-        public void agregarProveedor(string ruc, string nombreProveedor, string direccionProveedor, string correoElectronico, string telefonoMovil)
+        private Proveedor proveedor;
+
+        public void agregarProveedor(Proveedor proveedor)
         {
             using (var connection = GetConexion())
             {
@@ -23,11 +26,11 @@ namespace SiGIProV1.DAO
                     command.Connection = connection;
                     command.CommandText = "AgregarProveedor";
                     command.CommandType = System.Data.CommandType.StoredProcedure;
-                    command.Parameters.AddWithValue("@ruc", ruc);
-                    command.Parameters.AddWithValue("@nombre", nombreProveedor);
-                    command.Parameters.AddWithValue("@direccion", direccionProveedor);
-                    command.Parameters.AddWithValue("@correo", correoElectronico);
-                    command.Parameters.AddWithValue("@telefono", telefonoMovil);
+                    command.Parameters.AddWithValue("@ruc", proveedor.Ruc);
+                    command.Parameters.AddWithValue("@nombre", proveedor.Nombre);
+                    command.Parameters.AddWithValue("@direccion", proveedor.Direccion);
+                    command.Parameters.AddWithValue("@correo", proveedor.Correo);
+                    command.Parameters.AddWithValue("@telefono", proveedor.Telefono);
                     command.ExecuteNonQuery();
                     command.Parameters.Clear();
           
@@ -95,6 +98,59 @@ namespace SiGIProV1.DAO
                     tabla.Load(leerFilas);
                     leerFilas.Close();
                     return tabla;
+                }
+            }
+        }
+
+        public Boolean comprobarRUC(string ruc)
+        {
+            using (var connection = GetConexion())
+            {
+                connection.Open();
+
+                using (var command = new SqlCommand())
+                {
+                    DataTable tabla = new DataTable();
+
+                    command.Connection = connection;
+                    command.CommandText = "BuscarRucProveedor";
+                    command.CommandType = System.Data.CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@ruc", ruc);
+
+                    SqlDataReader reader = command.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        return true;
+                    }
+                    else { return false; }                        
+                }
+            }
+        }
+
+        public Proveedor llenarDatosProveedor(string ruc)
+        {
+            using (var connection = GetConexion())
+            {
+                connection.Open();
+
+                using (var command = new SqlCommand())
+                {
+                    DataTable tabla = new DataTable();
+                    command.Connection = connection;
+                    command.CommandText = "BuscarRucProveedor";
+                    command.CommandType = System.Data.CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@ruc", ruc);
+
+                    SqlDataReader reader = command.ExecuteReader();
+                    if (reader.Read())
+                    {
+                            proveedor = new Proveedor(ruc, reader.GetString(reader.GetOrdinal("NOMBRE_PROVEEDOR")),
+                            reader.GetString(reader.GetOrdinal("DIRECCION_PROVEEDOR")),
+                            reader.GetString(reader.GetOrdinal("TELEFONO_PROVEEDOR")),
+                            reader.GetString(reader.GetOrdinal("ESTADO_PROVEEDOR")),
+                            reader.GetString(reader.GetOrdinal("CORREO_PROVEEDOR")));
+                    }
+                    return proveedor;
                 }
             }
         }
