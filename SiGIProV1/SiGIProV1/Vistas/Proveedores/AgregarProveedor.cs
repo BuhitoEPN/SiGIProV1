@@ -38,7 +38,7 @@ namespace SiGIProV1.Vistas.Proveedores
         private void textBoxTelefono_KeyPress(object sender, KeyPressEventArgs e)
         {
             controlProveedor = new Controlador.ControlProveedor();
-            controlProveedor.verificarCampoNumeros(e);
+            controlProveedor.verificarCampoTelefono(e, labelErrorTelefono);
         }
 
         private void bRegistrar_Click(object sender, EventArgs e)

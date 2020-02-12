@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ActualizarProveedor));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.bBuscar = new System.Windows.Forms.Button();
@@ -47,6 +48,8 @@
             this.textBoxRUCBuscar = new System.Windows.Forms.TextBox();
             this.bActualizar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.labelErrorCorreo = new System.Windows.Forms.Label();
+            this.labelErrorTelefono = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -83,7 +86,7 @@
             this.tableLayoutPanel1.Controls.Add(this.label4, 1, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 20;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
@@ -134,7 +137,7 @@
             this.bBuscar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bBuscar.ForeColor = System.Drawing.SystemColors.ControlText;
             this.bBuscar.Location = new System.Drawing.Point(1156, 106);
-            this.bBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.bBuscar.Name = "bBuscar";
             this.tableLayoutPanel1.SetRowSpan(this.bBuscar, 3);
             this.bBuscar.Size = new System.Drawing.Size(208, 47);
@@ -149,6 +152,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.SetColumnSpan(this.groupBox1, 18);
+            this.groupBox1.Controls.Add(this.labelErrorTelefono);
+            this.groupBox1.Controls.Add(this.labelErrorCorreo);
             this.groupBox1.Controls.Add(this.labelRUC);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.textBoxCorreo);
@@ -164,9 +169,9 @@
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Gainsboro;
             this.groupBox1.Location = new System.Drawing.Point(76, 189);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.SetRowSpan(this.groupBox1, 13);
             this.groupBox1.Size = new System.Drawing.Size(1288, 473);
             this.groupBox1.TabIndex = 87;
@@ -211,10 +216,10 @@
             this.textBoxCorreo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxCorreo.ForeColor = System.Drawing.Color.Gainsboro;
             this.textBoxCorreo.Location = new System.Drawing.Point(371, 252);
-            this.textBoxCorreo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxCorreo.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxCorreo.MaxLength = 50;
             this.textBoxCorreo.Name = "textBoxCorreo";
-            this.textBoxCorreo.Size = new System.Drawing.Size(629, 32);
+            this.textBoxCorreo.Size = new System.Drawing.Size(598, 32);
             this.textBoxCorreo.TabIndex = 6;
             this.textBoxCorreo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxCorreo_KeyPress);
             // 
@@ -227,10 +232,10 @@
             this.textBoxTelefono.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTelefono.ForeColor = System.Drawing.Color.Gainsboro;
             this.textBoxTelefono.Location = new System.Drawing.Point(371, 324);
-            this.textBoxTelefono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxTelefono.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTelefono.MaxLength = 10;
             this.textBoxTelefono.Name = "textBoxTelefono";
-            this.textBoxTelefono.Size = new System.Drawing.Size(629, 32);
+            this.textBoxTelefono.Size = new System.Drawing.Size(598, 32);
             this.textBoxTelefono.TabIndex = 7;
             this.textBoxTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxTelefono_KeyPress);
             // 
@@ -243,12 +248,11 @@
             this.textBoxDireccion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxDireccion.ForeColor = System.Drawing.Color.Gainsboro;
             this.textBoxDireccion.Location = new System.Drawing.Point(371, 187);
-            this.textBoxDireccion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxDireccion.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxDireccion.MaxLength = 50;
             this.textBoxDireccion.Name = "textBoxDireccion";
-            this.textBoxDireccion.Size = new System.Drawing.Size(629, 32);
+            this.textBoxDireccion.Size = new System.Drawing.Size(598, 32);
             this.textBoxDireccion.TabIndex = 5;
-            this.textBoxDireccion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxDireccion_KeyPress);
             // 
             // textBoxNombre
             // 
@@ -259,10 +263,10 @@
             this.textBoxNombre.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNombre.ForeColor = System.Drawing.Color.Gainsboro;
             this.textBoxNombre.Location = new System.Drawing.Point(371, 112);
-            this.textBoxNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxNombre.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxNombre.MaxLength = 30;
             this.textBoxNombre.Name = "textBoxNombre";
-            this.textBoxNombre.Size = new System.Drawing.Size(629, 32);
+            this.textBoxNombre.Size = new System.Drawing.Size(598, 32);
             this.textBoxNombre.TabIndex = 4;
             this.textBoxNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxNombre_KeyPress);
             // 
@@ -281,10 +285,11 @@
             "ACTIVO",
             "INACTIVO"});
             this.comboBoxEstado.Location = new System.Drawing.Point(371, 402);
-            this.comboBoxEstado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxEstado.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxEstado.Name = "comboBoxEstado";
             this.comboBoxEstado.Size = new System.Drawing.Size(225, 31);
             this.comboBoxEstado.TabIndex = 8;
+            this.comboBoxEstado.SelectionChangeCommitted += new System.EventHandler(this.comboBoxEstado_SelectionChangeCommitted);
             // 
             // label3
             // 
@@ -371,7 +376,7 @@
             this.textBoxRUCBuscar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxRUCBuscar.ForeColor = System.Drawing.Color.Gainsboro;
             this.textBoxRUCBuscar.Location = new System.Drawing.Point(436, 115);
-            this.textBoxRUCBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxRUCBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxRUCBuscar.MaxLength = 13;
             this.textBoxRUCBuscar.Name = "textBoxRUCBuscar";
             this.textBoxRUCBuscar.Size = new System.Drawing.Size(640, 32);
@@ -390,7 +395,7 @@
             this.bActualizar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bActualizar.ForeColor = System.Drawing.Color.Gainsboro;
             this.bActualizar.Location = new System.Drawing.Point(1156, 680);
-            this.bActualizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bActualizar.Margin = new System.Windows.Forms.Padding(4);
             this.bActualizar.Name = "bActualizar";
             this.tableLayoutPanel1.SetRowSpan(this.bActualizar, 2);
             this.bActualizar.Size = new System.Drawing.Size(208, 55);
@@ -412,6 +417,40 @@
             this.label4.TabIndex = 89;
             this.label4.Text = "Buscar RUC del Proveedor:";
             // 
+            // labelErrorCorreo
+            // 
+            this.labelErrorCorreo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelErrorCorreo.AutoSize = true;
+            this.labelErrorCorreo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelErrorCorreo.Image = ((System.Drawing.Image)(resources.GetObject("labelErrorCorreo.Image")));
+            this.labelErrorCorreo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelErrorCorreo.Location = new System.Drawing.Point(994, 259);
+            this.labelErrorCorreo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelErrorCorreo.Name = "labelErrorCorreo";
+            this.labelErrorCorreo.Size = new System.Drawing.Size(158, 20);
+            this.labelErrorCorreo.TabIndex = 79;
+            this.labelErrorCorreo.Text = "     Correo no válido.";
+            this.labelErrorCorreo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelErrorCorreo.Visible = false;
+            // 
+            // labelErrorTelefono
+            // 
+            this.labelErrorTelefono.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelErrorTelefono.AutoSize = true;
+            this.labelErrorTelefono.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelErrorTelefono.Image = ((System.Drawing.Image)(resources.GetObject("labelErrorTelefono.Image")));
+            this.labelErrorTelefono.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelErrorTelefono.Location = new System.Drawing.Point(994, 330);
+            this.labelErrorTelefono.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelErrorTelefono.Name = "labelErrorTelefono";
+            this.labelErrorTelefono.Size = new System.Drawing.Size(211, 20);
+            this.labelErrorTelefono.TabIndex = 80;
+            this.labelErrorTelefono.Text = "     Teléfono móvil no válido.";
+            this.labelErrorTelefono.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelErrorTelefono.Visible = false;
+            // 
             // ActualizarProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -419,7 +458,7 @@
             this.ClientSize = new System.Drawing.Size(1440, 750);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ActualizarProveedor";
             this.Text = "ActualizarProveedor";
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -451,5 +490,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button bActualizar;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelErrorCorreo;
+        private System.Windows.Forms.Label labelErrorTelefono;
     }
 }

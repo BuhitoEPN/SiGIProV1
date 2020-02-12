@@ -38,9 +38,6 @@
             this.tUsuario = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lMensajeError = new System.Windows.Forms.Label();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -52,17 +49,19 @@
             this.panel1.Controls.Add(this.lEmpresa);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(250, 330);
+            this.panel1.Size = new System.Drawing.Size(333, 406);
             this.panel1.TabIndex = 1;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(28, 79);
+            this.pictureBox1.Location = new System.Drawing.Point(37, 97);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(196, 157);
+            this.pictureBox1.Size = new System.Drawing.Size(261, 193);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
@@ -73,21 +72,23 @@
             this.lEmpresa.AutoSize = true;
             this.lEmpresa.Font = new System.Drawing.Font("Century Gothic", 5.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lEmpresa.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lEmpresa.Location = new System.Drawing.Point(12, 312);
+            this.lEmpresa.Location = new System.Drawing.Point(16, 384);
+            this.lEmpresa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lEmpresa.Name = "lEmpresa";
-            this.lEmpresa.Size = new System.Drawing.Size(82, 9);
+            this.lEmpresa.Size = new System.Drawing.Size(108, 13);
             this.lEmpresa.TabIndex = 12;
             this.lEmpresa.Text = "Provisto por Nogal S.A.";
             // 
             // tPassword
             // 
+            this.tPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.tPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tPassword.ForeColor = System.Drawing.Color.DimGray;
-            this.tPassword.Location = new System.Drawing.Point(307, 167);
+            this.tPassword.Location = new System.Drawing.Point(409, 205);
+            this.tPassword.Margin = new System.Windows.Forms.Padding(4);
             this.tPassword.Name = "tPassword";
-            this.tPassword.Size = new System.Drawing.Size(416, 20);
+            this.tPassword.Size = new System.Drawing.Size(555, 32);
             this.tPassword.TabIndex = 18;
             this.tPassword.Text = "CONTRASEÑA";
             // 
@@ -95,13 +96,15 @@
             // 
             this.bSalir.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.bSalir.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bSalir.Location = new System.Drawing.Point(558, 269);
+            this.bSalir.Location = new System.Drawing.Point(744, 331);
+            this.bSalir.Margin = new System.Windows.Forms.Padding(4);
             this.bSalir.Name = "bSalir";
-            this.bSalir.Size = new System.Drawing.Size(164, 40);
+            this.bSalir.Size = new System.Drawing.Size(219, 49);
             this.bSalir.TabIndex = 19;
             this.bSalir.TabStop = false;
             this.bSalir.Text = "Salir";
             this.bSalir.UseVisualStyleBackColor = false;
+            this.bSalir.Click += new System.EventHandler(this.bSalir_Click);
             // 
             // bAceptar
             // 
@@ -112,22 +115,25 @@
             this.bAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bAceptar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bAceptar.ForeColor = System.Drawing.Color.Gainsboro;
-            this.bAceptar.Location = new System.Drawing.Point(307, 269);
+            this.bAceptar.Location = new System.Drawing.Point(409, 331);
+            this.bAceptar.Margin = new System.Windows.Forms.Padding(4);
             this.bAceptar.Name = "bAceptar";
-            this.bAceptar.Size = new System.Drawing.Size(247, 40);
+            this.bAceptar.Size = new System.Drawing.Size(329, 49);
             this.bAceptar.TabIndex = 20;
             this.bAceptar.Text = "Aceptar";
             this.bAceptar.UseVisualStyleBackColor = false;
+            this.bAceptar.Click += new System.EventHandler(this.bAceptar_Click);
             // 
             // tUsuario
             // 
+            this.tUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.tUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tUsuario.ForeColor = System.Drawing.Color.DimGray;
-            this.tUsuario.Location = new System.Drawing.Point(307, 106);
+            this.tUsuario.Location = new System.Drawing.Point(409, 130);
+            this.tUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.tUsuario.Name = "tUsuario";
-            this.tUsuario.Size = new System.Drawing.Size(416, 20);
+            this.tUsuario.Size = new System.Drawing.Size(555, 32);
             this.tUsuario.TabIndex = 17;
             this.tUsuario.Text = "USUARIO";
             // 
@@ -136,9 +142,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(406, 22);
+            this.label1.Location = new System.Drawing.Point(541, 27);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(190, 21);
+            this.label1.Size = new System.Drawing.Size(233, 23);
             this.label1.TabIndex = 16;
             this.label1.Text = "Login SiGIProV-RUESCO";
             // 
@@ -149,52 +156,21 @@
             this.lMensajeError.ForeColor = System.Drawing.Color.Gainsboro;
             this.lMensajeError.Image = ((System.Drawing.Image)(resources.GetObject("lMensajeError.Image")));
             this.lMensajeError.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lMensajeError.Location = new System.Drawing.Point(305, 223);
+            this.lMensajeError.Location = new System.Drawing.Point(407, 274);
+            this.lMensajeError.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lMensajeError.Name = "lMensajeError";
-            this.lMensajeError.Size = new System.Drawing.Size(113, 17);
+            this.lMensajeError.Size = new System.Drawing.Size(149, 21);
             this.lMensajeError.TabIndex = 21;
             this.lMensajeError.Text = "Mensaje de Error";
             this.lMensajeError.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lMensajeError.Visible = false;
             // 
-            // shapeContainer1
-            // 
-            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape3,
-            this.lineShape2});
-            this.shapeContainer1.Size = new System.Drawing.Size(780, 330);
-            this.shapeContainer1.TabIndex = 22;
-            this.shapeContainer1.TabStop = false;
-            // 
-            // lineShape2
-            // 
-            this.lineShape2.BorderColor = System.Drawing.Color.DimGray;
-            this.lineShape2.Enabled = false;
-            this.lineShape2.Name = "lineShape2";
-            this.lineShape2.X1 = 306;
-            this.lineShape2.X2 = 721;
-            this.lineShape2.Y1 = 133;
-            this.lineShape2.Y2 = 133;
-            // 
-            // lineShape3
-            // 
-            this.lineShape3.BorderColor = System.Drawing.Color.DimGray;
-            this.lineShape3.Enabled = false;
-            this.lineShape3.Name = "lineShape3";
-            this.lineShape3.X1 = 308;
-            this.lineShape3.X2 = 723;
-            this.lineShape3.Y1 = 196;
-            this.lineShape3.Y2 = 196;
-            // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.ClientSize = new System.Drawing.Size(780, 330);
+            this.ClientSize = new System.Drawing.Size(1040, 406);
             this.Controls.Add(this.lMensajeError);
             this.Controls.Add(this.tPassword);
             this.Controls.Add(this.bSalir);
@@ -202,8 +178,8 @@
             this.Controls.Add(this.tUsuario);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.shapeContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login";
             this.Text = "Login";
             this.panel1.ResumeLayout(false);
@@ -225,8 +201,5 @@
         private System.Windows.Forms.TextBox tUsuario;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lMensajeError;
-        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape3;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
     }
 }

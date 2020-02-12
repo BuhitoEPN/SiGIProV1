@@ -84,7 +84,7 @@
             this.tableLayoutPanel1.Controls.Add(this.bRegistrar, 19, 23);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 25;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
@@ -137,9 +137,9 @@
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Gainsboro;
             this.groupBox1.Location = new System.Drawing.Point(61, 124);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.SetRowSpan(this.groupBox1, 18);
             this.groupBox1.Size = new System.Drawing.Size(1303, 532);
             this.groupBox1.TabIndex = 47;
@@ -148,6 +148,8 @@
             // 
             // labelErrorTelefono
             // 
+            this.labelErrorTelefono.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.labelErrorTelefono.AutoSize = true;
             this.labelErrorTelefono.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelErrorTelefono.Image = ((System.Drawing.Image)(resources.GetObject("labelErrorTelefono.Image")));
@@ -155,14 +157,16 @@
             this.labelErrorTelefono.Location = new System.Drawing.Point(948, 410);
             this.labelErrorTelefono.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelErrorTelefono.Name = "labelErrorTelefono";
-            this.labelErrorTelefono.Size = new System.Drawing.Size(211, 20);
+            this.labelErrorTelefono.Size = new System.Drawing.Size(275, 20);
             this.labelErrorTelefono.TabIndex = 79;
-            this.labelErrorTelefono.Text = "     Teléfono móvil no válido.";
+            this.labelErrorTelefono.Text = "     Teléfono convencional no válido.";
             this.labelErrorTelefono.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.labelErrorTelefono.Visible = false;
             // 
             // labelErrorCorreo
             // 
+            this.labelErrorCorreo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.labelErrorCorreo.AutoSize = true;
             this.labelErrorCorreo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelErrorCorreo.Image = ((System.Drawing.Image)(resources.GetObject("labelErrorCorreo.Image")));
@@ -178,6 +182,8 @@
             // 
             // labelErrorRUC
             // 
+            this.labelErrorRUC.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.labelErrorRUC.AutoSize = true;
             this.labelErrorRUC.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelErrorRUC.Image = ((System.Drawing.Image)(resources.GetObject("labelErrorRUC.Image")));
@@ -215,7 +221,7 @@
             this.textBoxTelefono.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTelefono.ForeColor = System.Drawing.Color.Gainsboro;
             this.textBoxTelefono.Location = new System.Drawing.Point(399, 404);
-            this.textBoxTelefono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxTelefono.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTelefono.MaxLength = 10;
             this.textBoxTelefono.Name = "textBoxTelefono";
             this.textBoxTelefono.Size = new System.Drawing.Size(516, 32);
@@ -231,7 +237,7 @@
             this.textBoxCorreo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxCorreo.ForeColor = System.Drawing.Color.Gainsboro;
             this.textBoxCorreo.Location = new System.Drawing.Point(399, 327);
-            this.textBoxCorreo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxCorreo.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxCorreo.MaxLength = 50;
             this.textBoxCorreo.Name = "textBoxCorreo";
             this.textBoxCorreo.Size = new System.Drawing.Size(516, 32);
@@ -247,7 +253,7 @@
             this.textBoxDireccion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxDireccion.ForeColor = System.Drawing.Color.Gainsboro;
             this.textBoxDireccion.Location = new System.Drawing.Point(399, 245);
-            this.textBoxDireccion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxDireccion.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxDireccion.MaxLength = 50;
             this.textBoxDireccion.Name = "textBoxDireccion";
             this.textBoxDireccion.Size = new System.Drawing.Size(516, 32);
@@ -263,7 +269,7 @@
             this.textBoxNombre.ForeColor = System.Drawing.Color.Gainsboro;
             this.textBoxNombre.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.textBoxNombre.Location = new System.Drawing.Point(399, 167);
-            this.textBoxNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxNombre.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxNombre.MaxLength = 30;
             this.textBoxNombre.Name = "textBoxNombre";
             this.textBoxNombre.Size = new System.Drawing.Size(516, 32);
@@ -310,7 +316,7 @@
             this.textBoxRuc.ForeColor = System.Drawing.Color.Gainsboro;
             this.textBoxRuc.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.textBoxRuc.Location = new System.Drawing.Point(399, 92);
-            this.textBoxRuc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxRuc.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxRuc.MaxLength = 13;
             this.textBoxRuc.Name = "textBoxRuc";
             this.textBoxRuc.Size = new System.Drawing.Size(516, 32);
@@ -376,7 +382,7 @@
             this.bRegistrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bRegistrar.ForeColor = System.Drawing.Color.Gainsboro;
             this.bRegistrar.Location = new System.Drawing.Point(1087, 696);
-            this.bRegistrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bRegistrar.Margin = new System.Windows.Forms.Padding(4);
             this.bRegistrar.Name = "bRegistrar";
             this.tableLayoutPanel1.SetRowSpan(this.bRegistrar, 2);
             this.bRegistrar.Size = new System.Drawing.Size(277, 55);
@@ -392,7 +398,7 @@
             this.ClientSize = new System.Drawing.Size(1440, 757);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AgregarProveedor";
             this.Text = "RegistrarProveedor";
             this.tableLayoutPanel1.ResumeLayout(false);
