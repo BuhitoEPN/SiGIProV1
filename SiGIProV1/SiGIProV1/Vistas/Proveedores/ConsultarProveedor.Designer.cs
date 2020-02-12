@@ -125,6 +125,8 @@
             // 
             // dGVProveedores
             // 
+            this.dGVProveedores.AllowUserToAddRows = false;
+            this.dGVProveedores.AllowUserToDeleteRows = false;
             this.dGVProveedores.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -144,7 +146,7 @@
             this.dGVProveedores.GridColor = System.Drawing.Color.SteelBlue;
             this.dGVProveedores.Location = new System.Drawing.Point(22, 36);
             this.dGVProveedores.Name = "dGVProveedores";
-            this.dGVProveedores.RowHeadersWidth = 51;
+            this.dGVProveedores.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
