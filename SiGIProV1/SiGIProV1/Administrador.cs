@@ -25,7 +25,7 @@ namespace SiGIProV1
         private Form currentChildForm = new Form();
         private ControladorInterfaz controlInterfaz = new ControladorInterfaz();
 
-        public Administrador()
+      /*  public Administrador()
         {
             InitializeComponent();
             this.CenterToScreen();
@@ -35,12 +35,23 @@ namespace SiGIProV1
             this.menuSuperior.Renderer = new MenuStripRender();
 
             controlInterfaz.OpenChildForm(new HomeAdministrador(), currentChildForm, panelEscritorio);
+        }*/
+        public Administrador(string user)
+        {
+            InitializeComponent();
+            this.CenterToScreen();
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            this.Text = "Administrador";
+            this.menuSuperior.Renderer = new MenuStripRender();
+            this.menuSuperior.Renderer = new MenuStripRender();
+
+            controlInterfaz.OpenChildForm(new HomeAdministrador(user), currentChildForm, panelEscritorio);
         }
 
         //HOME:
         private void homeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            controlInterfaz.OpenChildForm(new HomeAdministrador(), currentChildForm, panelEscritorio);
+            controlInterfaz.OpenChildForm(new HomeAdministrador("User"), currentChildForm, panelEscritorio);
         }
         /*------------------------------------------------------
         * -------------------PROVEEDORES------------------------

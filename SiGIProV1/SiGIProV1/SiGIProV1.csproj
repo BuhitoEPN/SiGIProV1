@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Conexion\ConnectionToSql.cs" />
     <Compile Include="Controlador\ControladorInterfaz.cs" />
+    <Compile Include="Controlador\ControlLogin.cs" />
     <Compile Include="Controlador\ControlProveedor.cs" />
     <Compile Include="Controlador\ControlValidaciones.cs" />
     <Compile Include="Controlador\MenuStripRender.cs" />
@@ -61,6 +62,7 @@
     <Compile Include="Administrador.Designer.cs">
       <DependentUpon>Administrador.cs</DependentUpon>
     </Compile>
+    <Compile Include="DAO\DAOUsuario.cs" />
     <Compile Include="Modelo\Proveedor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
