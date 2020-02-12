@@ -130,9 +130,9 @@
             this.label4.ForeColor = System.Drawing.Color.Gainsboro;
             this.label4.Location = new System.Drawing.Point(435, 29);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(247, 28);
+            this.label4.Size = new System.Drawing.Size(237, 28);
             this.label4.TabIndex = 37;
-            this.label4.Text = "Consultar Categoría";
+            this.label4.Text = "Lista de Categorías";
             // 
             // ConsultarCategoria
             // 

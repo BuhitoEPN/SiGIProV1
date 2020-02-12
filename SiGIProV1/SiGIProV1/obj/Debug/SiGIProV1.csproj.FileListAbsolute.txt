@@ -36,3 +36,4 @@ C:\Users\ALEX\Documents\GitHub\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1
 C:\Users\ALEX\Documents\GitHub\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Clientes.ConsultarCliente.resources
 C:\Users\ALEX\Documents\GitHub\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Clientes.ActualizarCliente.resources
 C:\Users\ALEX\Documents\GitHub\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Ventas.GenerarOrden.resources
+C:\Users\ALEX\Documents\GitHub\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Login.resources
