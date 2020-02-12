@@ -142,6 +142,14 @@ namespace SiGIProV1.Controlador
             controlValidaciones.validarCamposNumericos(evt);
         }
 
+        public void verificarCampoTelefono(KeyPressEventArgs evt)
+        {
+            
+            ControlValidaciones controlValidaciones = new ControlValidaciones();
+            controlValidaciones.validarCamposNumericos(evt);
+
+        }
+
 
         public void verificarCampoCorreo(Label error, TextBox correo)
         {
