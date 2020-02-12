@@ -16,15 +16,8 @@ namespace SiGIProV1.Vistas.Proveedores
         public AgregarProveedor()
         {
             InitializeComponent();
-            controlProveedor = new Controlador.ControlProveedor();
         }
 
-        private void bRegistrar_Click(object sender, EventArgs e)
-        {
-            controlProveedor = new Controlador.ControlProveedor();
-            controlProveedor.agregarProveedor(textBoxRuc.Text, textBoxNombre.Text, textBoxDireccion.Text, textBoxCorreo.Text, textBoxTelefono.Text);
-            vaciarTextBox();
-        }
 
         private void vaciarTextBox()
         {
@@ -35,5 +28,34 @@ namespace SiGIProV1.Vistas.Proveedores
             textBoxTelefono.Text = "";
         }
 
+        private void textBoxRuc_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            controlProveedor = new Controlador.ControlProveedor();
+            controlProveedor.verificarCampoRUC(e, labelErrorRUC, textBoxRuc);
+        }
+
+        private void textBoxNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            controlProveedor = new Controlador.ControlProveedor();
+            controlProveedor.verificarCampoLetras(e);
+        }
+
+        private void textBoxCorreo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            controlProveedor = new Controlador.ControlProveedor();
+            controlProveedor.verificarCampoCorreo(labelErrorCorreo, textBoxCorreo);
+        }
+        private void textBoxTelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            controlProveedor = new Controlador.ControlProveedor();
+            controlProveedor.verificarCampoNumeros(e);
+        }
+
+        private void bRegistrar_Click(object sender, EventArgs e)
+        {
+            controlProveedor = new Controlador.ControlProveedor();
+            controlProveedor.agregarProveedor(textBoxRuc.Text, textBoxNombre.Text, textBoxDireccion.Text, textBoxCorreo.Text, textBoxTelefono.Text);
+            vaciarTextBox();
+        }
     }
 }

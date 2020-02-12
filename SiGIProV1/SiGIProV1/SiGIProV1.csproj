@@ -49,6 +49,7 @@
     <Compile Include="Conexion\ConnectionToSql.cs" />
     <Compile Include="Controlador\ControladorInterfaz.cs" />
     <Compile Include="Controlador\ControlProveedor.cs" />
+    <Compile Include="Controlador\ControlValidaciones.cs" />
     <Compile Include="Controlador\MenuStripRender.cs" />
     <Compile Include="DAO\DAOProveedor.cs" />
     <Compile Include="Administrador.cs">

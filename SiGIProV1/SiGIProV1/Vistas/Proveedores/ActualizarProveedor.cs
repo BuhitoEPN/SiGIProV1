@@ -31,5 +31,30 @@ namespace SiGIProV1.Vistas.Proveedores
 
         }
 
+        private void textBoxRUCBuscar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            controlProveedor = new Controlador.ControlProveedor();
+            controlProveedor.verificarCampoNumeros(e);
+        }
+
+        private void textBoxNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void textBoxDireccion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void textBoxCorreo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void textBoxTelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
     }
 }

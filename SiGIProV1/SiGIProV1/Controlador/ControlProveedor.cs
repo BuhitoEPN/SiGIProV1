@@ -71,7 +71,14 @@ namespace SiGIProV1.Controlador
                     direccion.Text = proveedor.Direccion;
                     correo.Text = proveedor.Correo;
                     telefono.Text = proveedor.Telefono;
-                    estado.Text = proveedor.Estado;
+                    if (proveedor.Estado.Equals("ACTIVO"))
+                    {
+                        estado.SelectedIndex = 0;
+                    } else
+                    {
+                        estado.SelectedIndex = 1;
+                    }
+                    rucBuscar.Text = "";
 
                 }
                 else
@@ -85,6 +92,41 @@ namespace SiGIProV1.Controlador
                     telefono.Text = "";
                     estado.Text = "";
                 }
+            }
+        }
+
+        public void verificarCampoRUC(KeyPressEventArgs evt, Label error, TextBox ruc)
+        {
+            ControlValidaciones controlValidaciones = new ControlValidaciones();
+            controlValidaciones.validarCamposNumericos(evt);
+            /*if (controlValidaciones.verificarCedula(ruc.Text){
+
+            }*/
+        }
+
+        public void verificarCampoLetras(KeyPressEventArgs evt)
+        {
+            ControlValidaciones controlValidaciones = new ControlValidaciones();
+            controlValidaciones.validarCamposTexto(evt);
+        }
+
+        public void verificarCampoNumeros(KeyPressEventArgs evt)
+        {
+            ControlValidaciones controlValidaciones = new ControlValidaciones();
+            controlValidaciones.validarCamposNumericos(evt);
+        }
+
+
+        public void verificarCampoCorreo(Label error, TextBox correo)
+        {
+            ControlValidaciones controlValidaciones = new ControlValidaciones();
+            if (!controlValidaciones.validarCorreo(correo.Text))
+            {
+                error.Visible = true;
+            }
+            else
+            {
+                error.Visible = false;
             }
         }
 
