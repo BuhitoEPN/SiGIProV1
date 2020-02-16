@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion\ConnectionToSql.cs" />
+    <Compile Include="Controlador\ControladorHome.cs" />
     <Compile Include="Controlador\ControladorInterfaz.cs" />
     <Compile Include="Controlador\ControlLogin.cs" />
     <Compile Include="Controlador\ControlProveedor.cs" />

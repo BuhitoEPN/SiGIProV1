@@ -147,7 +147,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(233, 23);
             this.label1.TabIndex = 16;
-            this.label1.Text = "Login SiGIProV-RUESCO";
+            this.label1.Text = "LoginCargoDAO SiGIProV-RUESCO";
             // 
             // lMensajeError
             // 
@@ -165,7 +165,7 @@
             this.lMensajeError.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lMensajeError.Visible = false;
             // 
-            // Login
+            // LoginCargoDAO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -180,8 +180,8 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Login";
-            this.Text = "Login";
+            this.Name = "LoginCargoDAO";
+            this.Text = "LoginCargoDAO";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

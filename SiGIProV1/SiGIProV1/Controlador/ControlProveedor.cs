@@ -12,8 +12,6 @@ namespace SiGIProV1.Controlador
 {
     class ControlProveedor
     {
-        private DAOProveedor daoProveedor;
-        private Proveedor proveedor;
         public void agregarProveedor(TextBox ruc, TextBox nombreProveedor, TextBox direccionProveedor, TextBox correoElectronico, TextBox telefonoMovil, Label errorRuc, Label errorTelefono, Label errorCorreo)
         {
             if (ruc.Text.Equals("") || nombreProveedor.Text.Equals("") || direccionProveedor.Text.Equals("") || correoElectronico.Text.Equals("") || telefonoMovil.Text.Equals(""))
@@ -29,9 +27,7 @@ namespace SiGIProV1.Controlador
                 }
                 else
                 {
-                    daoProveedor = new DAOProveedor();
-                    proveedor = new Proveedor(ruc.Text, nombreProveedor.Text, direccionProveedor.Text, telefonoMovil.Text, "ACTIVO", correoElectronico.Text);
-                    daoProveedor.agregarProveedor(proveedor);
+                    new DAOProveedor().agregarProveedor(new Proveedor(ruc.Text, nombreProveedor.Text, direccionProveedor.Text, telefonoMovil.Text, "ACTIVO", correoElectronico.Text));
                     MessageBox.Show("Proveedor registrado con éxito.");
                     ruc.Text = "";
                     nombreProveedor.Text = "";
@@ -44,13 +40,12 @@ namespace SiGIProV1.Controlador
 
         public DataTable listarProveedores()
         {
-            daoProveedor = new DAOProveedor();
-            return daoProveedor.listarProveedor();
+            return new DAOProveedor().listarProveedor();
         }
 
         public DataTable filtroProveedor(string comboBox, string buscar)
         {
-            daoProveedor = new DAOProveedor();
+            DAOProveedor daoProveedor = new DAOProveedor();
             
             if (comboBox.Equals("RUC"))
             {
@@ -77,8 +72,8 @@ namespace SiGIProV1.Controlador
 
         public void buscarProveedor(TextBox rucBuscar, Label rucLabel, TextBox nombre, TextBox direccion, TextBox correo, ComboBox estado,TextBox telefono)
         {
-            daoProveedor = new DAOProveedor();
-            proveedor = new Proveedor();
+            DAOProveedor daoProveedor = new DAOProveedor();
+            Proveedor proveedor = new Proveedor();
 
             if (rucBuscar.Text.Equals(""))
             {
@@ -140,10 +135,8 @@ namespace SiGIProV1.Controlador
 
         public void verificarCampoRUC(KeyPressEventArgs evt, Label error, TextBox ruc)
         {
-            ControlValidaciones controlValidaciones = new ControlValidaciones();
-            controlValidaciones.validarCamposNumericos(evt);
-            daoProveedor = new DAOProveedor();
-            if (daoProveedor.comprobarRUC(ruc.Text))
+            new ControlValidaciones().validarCamposNumericos(evt);
+            if (new DAOProveedor().comprobarRUC(ruc.Text))
             {
                 error.Visible = true;
                 MessageBox.Show("Ya existe un proveedor con el RUC: " + ruc.Text + ".");
@@ -172,22 +165,18 @@ namespace SiGIProV1.Controlador
 
         public void verificarCampoLetras(KeyPressEventArgs evt)
         {
-            ControlValidaciones controlValidaciones = new ControlValidaciones();
-            controlValidaciones.validarCamposTexto(evt);
+            new ControlValidaciones().validarCamposTexto(evt);
         }
 
         public void verificarCampoNumeros(KeyPressEventArgs evt)
         {
-            ControlValidaciones controlValidaciones = new ControlValidaciones();
-            controlValidaciones.validarCamposNumericos(evt);
+            new ControlValidaciones().validarCamposNumericos(evt);
         }
 
         public void verificarCampoTelefono(KeyPressEventArgs evt, Label error)
         {
             
-            ControlValidaciones controlValidaciones = new ControlValidaciones();
-            controlValidaciones.validarCamposNumericos(evt);
-
+            new ControlValidaciones().validarCamposNumericos(evt);
         }
 
         public void verificarCampoCorreo(Label error, TextBox correo)
@@ -217,9 +206,7 @@ namespace SiGIProV1.Controlador
                 }
                 else
                 {
-                    daoProveedor = new DAOProveedor();
-                    proveedor = new Proveedor(ruc.Text, nombreProveedor.Text, direccionProveedor.Text, telefonoMovil.Text, estado.Text, correoElectronico.Text);
-                    daoProveedor.actualizarProveedor(proveedor);
+                    new DAOProveedor().actualizarProveedor(new Proveedor(ruc.Text, nombreProveedor.Text, direccionProveedor.Text, telefonoMovil.Text, estado.Text, correoElectronico.Text));
                     MessageBox.Show("Proveedor actualizado con éxito.");
                     nombreProveedor.Text = "";
                     direccionProveedor.Text = "";

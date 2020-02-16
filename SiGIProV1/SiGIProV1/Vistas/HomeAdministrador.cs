@@ -1,4 +1,4 @@
-﻿using SiGIProV1.DAO;
+﻿using SiGIProV1.Controlador;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,17 +13,12 @@ namespace SiGIProV1.Vistas
 {
     public partial class HomeAdministrador : Form
     {
-       /* public HomeAdministrador()
-        {
-            InitializeComponent();
-        }*/
 
         public HomeAdministrador(string user)
         {
             InitializeComponent();
-            DAOUsuario dAOUsuario = new DAOUsuario();
-            string nombre = dAOUsuario.devolverNombre(user);
-            labelSaludo.Text = "Bienvenido " + nombre;
+            new ControladorHome().nombreUsuario(labelSaludo, user);
+
         }
 
         private void horaFecha_Tick(object sender, EventArgs e)

@@ -11,29 +11,29 @@ namespace SiGIProV1.DAO
 {
     class DAOUsuario : ConnectionToSql
     {
-        public string Login(string user, string pass)
+        public string LoginCargoDAO(string user, string pass)
         {
             using (var connection = GetConexion())
             {
+                string cargo = string.Empty;
                 connection.Open();
 
                 using (var command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.Parameters.AddWithValue("@usario", user);
+                    command.CommandText = "ValidarLoginCargo";
+                    command.CommandType = System.Data.CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@user", user);
                     command.Parameters.AddWithValue("@pass", pass);
-                    command.CommandText = "SELECT * FROM EMPLEADO WHERE CEDULA_EMPLEADO = @usario AND CONTRASENA = @pass";
-                    command.CommandType = CommandType.Text;
                     SqlDataReader reader = command.ExecuteReader();
 
-                    string cargo = string.Empty;
                     //Cuadno queremos tomar un dato de una columna especifica
                     if (reader.Read())
                     {
                         cargo = reader.GetString(reader.GetOrdinal("CARGO_EMPLEADO"));
-                        return cargo;
                     }
-                    else { return cargo; }
+
+                    return cargo;
                 }
             }
 

@@ -13,9 +13,6 @@ namespace SiGIProV1.DAO
 {
     class DAOProveedor : ConnectionToSql
     {
-        private SqlDataReader leerFilas;
-        private Proveedor proveedor;
-
         public void agregarProveedor(Proveedor proveedor)
         {
             using (var connection = GetConexion())
@@ -51,7 +48,7 @@ namespace SiGIProV1.DAO
                     command.Connection = connection;
                     command.CommandText = "ListarProveedor";
                     command.CommandType = System.Data.CommandType.StoredProcedure;
-                    leerFilas = command.ExecuteReader();
+                    SqlDataReader leerFilas = command.ExecuteReader();
                     tabla.Load(leerFilas);
                     leerFilas.Close();
                     return tabla;
@@ -72,7 +69,7 @@ namespace SiGIProV1.DAO
                     command.CommandText = "FiltrarRucProveedor";
                     command.CommandType = System.Data.CommandType.StoredProcedure;
                     command.Parameters.AddWithValue("@ruc", ruc);
-                    leerFilas = command.ExecuteReader();
+                    SqlDataReader leerFilas = command.ExecuteReader();
                     command.Parameters.Clear();
                     tabla.Load(leerFilas);
                     leerFilas.Close();
@@ -94,7 +91,7 @@ namespace SiGIProV1.DAO
                     command.CommandText = "FiltrarNombreProveedor";
                     command.CommandType = System.Data.CommandType.StoredProcedure;
                     command.Parameters.AddWithValue("@nombre", nombre);
-                    leerFilas = command.ExecuteReader();
+                    SqlDataReader leerFilas = command.ExecuteReader();
                     command.Parameters.Clear();
                     tabla.Load(leerFilas);
                     leerFilas.Close();
@@ -161,6 +158,7 @@ namespace SiGIProV1.DAO
         {
             using (var connection = GetConexion())
             {
+                Proveedor proveedor = new Proveedor();
                 connection.Open();
 
                 using (var command = new SqlCommand())
