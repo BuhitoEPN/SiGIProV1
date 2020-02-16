@@ -50,6 +50,8 @@
             this.textBoxRUCBuscar = new System.Windows.Forms.TextBox();
             this.bActualizar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.labelErrorCorreo = new System.Windows.Forms.Label();
+            this.labelErrorTelefono = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -450,6 +452,40 @@
             this.label4.Size = new System.Drawing.Size(273, 23);
             this.label4.TabIndex = 89;
             this.label4.Text = "Buscar RUC del Proveedor:";
+            // 
+            // labelErrorCorreo
+            // 
+            this.labelErrorCorreo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelErrorCorreo.AutoSize = true;
+            this.labelErrorCorreo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelErrorCorreo.Image = ((System.Drawing.Image)(resources.GetObject("labelErrorCorreo.Image")));
+            this.labelErrorCorreo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelErrorCorreo.Location = new System.Drawing.Point(994, 259);
+            this.labelErrorCorreo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelErrorCorreo.Name = "labelErrorCorreo";
+            this.labelErrorCorreo.Size = new System.Drawing.Size(158, 20);
+            this.labelErrorCorreo.TabIndex = 79;
+            this.labelErrorCorreo.Text = "     Correo no válido.";
+            this.labelErrorCorreo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelErrorCorreo.Visible = false;
+            // 
+            // labelErrorTelefono
+            // 
+            this.labelErrorTelefono.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelErrorTelefono.AutoSize = true;
+            this.labelErrorTelefono.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelErrorTelefono.Image = ((System.Drawing.Image)(resources.GetObject("labelErrorTelefono.Image")));
+            this.labelErrorTelefono.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelErrorTelefono.Location = new System.Drawing.Point(994, 330);
+            this.labelErrorTelefono.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelErrorTelefono.Name = "labelErrorTelefono";
+            this.labelErrorTelefono.Size = new System.Drawing.Size(211, 20);
+            this.labelErrorTelefono.TabIndex = 80;
+            this.labelErrorTelefono.Text = "     Teléfono móvil no válido.";
+            this.labelErrorTelefono.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelErrorTelefono.Visible = false;
             // 
             // ActualizarProveedor
             // 
