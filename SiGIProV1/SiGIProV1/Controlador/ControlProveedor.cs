@@ -1,11 +1,6 @@
 ﻿using SiGIProV1.DAO;
 using SiGIProV1.Modelo;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SiGIProV1.Controlador
@@ -78,25 +73,13 @@ namespace SiGIProV1.Controlador
             if (rucBuscar.Text.Equals(""))
             {
                 MessageBox.Show("Ingrese el RUC del proveedor que desea actualizar.");
-                rucBuscar.Text = "";
-                rucLabel.Text = "";
-                nombre.Text = "";
-                direccion.Text = "";
-                correo.Text = "";
-                telefono.Text = "";
-                estado.SelectedIndex = -1;
+                vaciarCamposProveedor(rucBuscar, rucLabel, nombre, direccion, correo, telefono, estado);
             }
             else if (rucBuscar.TextLength < 13)
             {
 
                 MessageBox.Show("El RUC sebe tener 13 caracteres.");
-                rucBuscar.Text = "";
-                rucLabel.Text = "";
-                nombre.Text = "";
-                direccion.Text = "";
-                correo.Text = "";
-                telefono.Text = "";
-                estado.SelectedIndex = -1;
+                vaciarCamposProveedor(rucBuscar, rucLabel, nombre, direccion, correo, telefono, estado);
             }
             else
             {
@@ -121,15 +104,20 @@ namespace SiGIProV1.Controlador
                 else
                 {
                     MessageBox.Show("No se encontró ningún proveedor con el RUC: " + rucBuscar.Text + ".");
-                    rucBuscar.Text = "";
-                    rucLabel.Text = "";
-                    nombre.Text = "";
-                    direccion.Text = "";
-                    correo.Text = "";
-                    telefono.Text = "";
-                    estado.SelectedIndex = -1;
+                    vaciarCamposProveedor(rucBuscar, rucLabel, nombre, direccion, correo, telefono, estado);
                 }
             }
+        }
+
+        private void vaciarCamposProveedor(TextBox rucBuscar, Label rucLabel, TextBox nombre, TextBox direccion, TextBox correo, TextBox telefono, ComboBox estado)
+        {
+            rucBuscar.Text = "";
+            rucLabel.Text = "";
+            nombre.Text = "";
+            direccion.Text = "";
+            correo.Text = "";
+            telefono.Text = "";
+            estado.SelectedIndex = -1;
         }
 
 

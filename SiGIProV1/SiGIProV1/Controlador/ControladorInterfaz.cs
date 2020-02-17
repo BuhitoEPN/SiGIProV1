@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace SiGIProV1.Controlador
 {
     class ControladorInterfaz

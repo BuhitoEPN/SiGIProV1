@@ -19,7 +19,7 @@ namespace SiGIProV1.Vistas.Proveedores
 
         private void bActualizar_Click(object sender, EventArgs e)
         {
-            new Controlador.ControlProveedor().actualizarProveedor(labelRUC, textBoxNombre, textBoxDireccion, textBoxCorreo, textBoxTelefono, comboBoxEstado, labelErrorTelefono, labelErrorCorreo);
+            new Controlador.ControlProveedor().actualizarProveedor(labelRUC, textBoxNombre, textBoxDireccion, textBoxCorreo, textBoxTelefono, comboBoxEstado, labelErrorTelefonoActualizar, labelErrorCorreoActualizar);
         }
 
         private void textBoxRUCBuscar_KeyPress(object sender, KeyPressEventArgs e)
@@ -35,12 +35,12 @@ namespace SiGIProV1.Vistas.Proveedores
 
         private void textBoxCorreo_KeyPress(object sender, KeyPressEventArgs e)
         {
-            new Controlador.ControlProveedor().verificarCampoCorreo(labelErrorCorreo, textBoxCorreo);
+            new Controlador.ControlProveedor().verificarCampoCorreo(labelErrorCorreoActualizar, textBoxCorreo);
         }
 
         private void textBoxTelefono_KeyPress(object sender, KeyPressEventArgs e)
         {
-            new Controlador.ControlProveedor().verificarCampoTelefono(e, labelErrorTelefono);
+            new Controlador.ControlProveedor().verificarCampoTelefono(e, labelErrorTelefonoActualizar);
         }
 
 
@@ -71,5 +71,6 @@ namespace SiGIProV1.Vistas.Proveedores
                 }
             }
         }
+
     }
 }
