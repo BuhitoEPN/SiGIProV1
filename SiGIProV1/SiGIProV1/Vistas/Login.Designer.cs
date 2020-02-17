@@ -52,6 +52,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(250, 330);
             this.panel1.TabIndex = 1;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
             // pictureBox1
             // 
@@ -63,6 +64,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
             // 
             // lEmpresa
             // 
@@ -87,6 +89,8 @@
             this.tPassword.Size = new System.Drawing.Size(417, 27);
             this.tPassword.TabIndex = 18;
             this.tPassword.Text = "CONTRASEÑA";
+            this.tPassword.Enter += new System.EventHandler(this.tPassword_Enter);
+            this.tPassword.Leave += new System.EventHandler(this.tPassword_Leave);
             // 
             // bSalir
             // 
@@ -129,6 +133,8 @@
             this.tUsuario.Size = new System.Drawing.Size(417, 27);
             this.tUsuario.TabIndex = 17;
             this.tUsuario.Text = "USUARIO";
+            this.tUsuario.Enter += new System.EventHandler(this.tUsuario_Enter);
+            this.tUsuario.Leave += new System.EventHandler(this.tUsuario_Leave);
             // 
             // label1
             // 
@@ -137,9 +143,9 @@
             this.label1.ForeColor = System.Drawing.Color.DimGray;
             this.label1.Location = new System.Drawing.Point(406, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(279, 21);
+            this.label1.Size = new System.Drawing.Size(145, 21);
             this.label1.TabIndex = 16;
-            this.label1.Text = "LoginCargoDAO SiGIProV-RUESCO";
+            this.label1.Text = "SiGIProV-RUESCO";
             // 
             // lMensajeError
             // 
@@ -170,8 +176,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
             this.Text = "LoginCargoDAO";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Login_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

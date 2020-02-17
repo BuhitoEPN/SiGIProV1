@@ -1,5 +1,6 @@
 ﻿using SiGIProV1.DAO;
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace SiGIProV1.Controlador
@@ -15,6 +16,7 @@ namespace SiGIProV1.Controlador
         private int segundos;
         private int intentos = 0;
 
+        //ABRIR LOS DIFERENTES FORM DEPENDIENDO DEL CARGO:
         public void controlPorCargos(TextBox textUser, TextBox textPass, Label labelError, Form login, Button butAceptar, Button butSalir)
         {
             error = labelError;
@@ -73,7 +75,7 @@ namespace SiGIProV1.Controlador
             }
             else msgError("Por favor, ingrese su usuario.", error);            
         }
-
+        //FUNCIÓN QUE BLOQUEA EL SISTEMA:
         private void bloquearSistema(object sender, EventArgs e)
         {
             msgError("Sistema bloqueado, porfavor espere " + segundos + " segundos.", error);
@@ -88,13 +90,46 @@ namespace SiGIProV1.Controlador
             }
             segundos--;
         }
-
+        //FUNCIÓN QUE MUESTRA LOS MENSAJES DE ERROR:
         private void msgError(string msg, Label lMensajeError)
         {
             lMensajeError.Text = "    " + msg;
             lMensajeError.Visible = true;
         }
 
+        public void focoEnradaLogin(TextBox labelUsuario)
+        {
+            if (labelUsuario.Text=="USUARIO")
+            {
+                labelUsuario.Text = "";
+                labelUsuario.ForeColor = Color.LightGray;
+            }
+            else if(labelUsuario.Text == "CONTRASEÑA")
+            {
+                labelUsuario.Text = "";
+                labelUsuario.ForeColor = Color.LightGray;
+                labelUsuario.UseSystemPasswordChar = true;
+            }
+        }
+
+        public void focoSalidaUsuarioLogin(TextBox labelUsuario)
+        {
+            if (labelUsuario.Text =="")
+            {
+                labelUsuario.Text = "USUARIO";
+                labelUsuario.ForeColor = Color.DimGray;
+            }
+        }
+
+        public void focoSalidaPasswordLogin(TextBox labelPassword)
+        {
+            if (labelPassword.Text =="")
+            {
+                labelPassword.Text = "CONTRASEÑA";
+                labelPassword.ForeColor = Color.DimGray;
+                labelPassword.UseSystemPasswordChar = false;
+            }
+        }
     }
 
 }

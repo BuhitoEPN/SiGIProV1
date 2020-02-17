@@ -24,18 +24,8 @@ namespace SiGIProV1
     {
         private Form currentChildForm = new Form();
         private ControladorInterfaz controlInterfaz = new ControladorInterfaz();
+        private String usuario;
 
-      /*  public Administrador()
-        {
-            InitializeComponent();
-            this.CenterToScreen();
-            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-            this.Text = "Administrador";
-            this.menuSuperior.Renderer = new MenuStripRender();
-            this.menuSuperior.Renderer = new MenuStripRender();
-
-            controlInterfaz.OpenChildForm(new HomeAdministrador(), currentChildForm, panelEscritorio);
-        }*/
         public Administrador(string user)
         {
             InitializeComponent();
@@ -44,14 +34,25 @@ namespace SiGIProV1
             this.Text = "Administrador";
             this.menuSuperior.Renderer = new MenuStripRender();
             this.menuSuperior.Renderer = new MenuStripRender();
-
-            controlInterfaz.OpenChildForm(new HomeAdministrador(user), currentChildForm, panelEscritorio);
+            usuario = user;
+            controlInterfaz.OpenChildForm(new HomeAdministrador(usuario), currentChildForm, panelEscritorio);
         }
 
         //HOME:
         private void homeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            controlInterfaz.OpenChildForm(new HomeAdministrador("User"), currentChildForm, panelEscritorio);
+            
+        }
+
+        private void homeToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            controlInterfaz.OpenChildForm(new HomeAdministrador(usuario), currentChildForm, panelEscritorio);
+        }
+
+        private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Login().ShowDialog();
         }
         /*------------------------------------------------------
         * -------------------PROVEEDORES------------------------
@@ -231,7 +232,6 @@ namespace SiGIProV1
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-
 
     }
 }
