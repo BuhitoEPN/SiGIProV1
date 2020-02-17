@@ -36,3 +36,68 @@ C:\Users\ALEX\Documents\GitHub\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1
 C:\Users\ALEX\Documents\GitHub\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Clientes.ConsultarCliente.resources
 C:\Users\ALEX\Documents\GitHub\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Clientes.ActualizarCliente.resources
 C:\Users\ALEX\Documents\GitHub\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Ventas.GenerarOrden.resources
+C:\Users\dome_\Documents\Programas\C#\SiGIProV1\SiGIProV1\SiGIProV1\bin\Debug\SiGIProV1.exe.config
+C:\Users\dome_\Documents\Programas\C#\SiGIProV1\SiGIProV1\SiGIProV1\bin\Debug\SiGIProV1.exe
+C:\Users\dome_\Documents\Programas\C#\SiGIProV1\SiGIProV1\SiGIProV1\bin\Debug\SiGIProV1.pdb
+C:\Users\dome_\Documents\Programas\C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.csprojAssemblyReference.cache
+C:\Users\dome_\Documents\Programas\C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Properties.Resources.resources
+C:\Users\dome_\Documents\Programas\C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Administrador.resources
+C:\Users\dome_\Documents\Programas\C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Categoria.ActualizarCategoria.resources
+C:\Users\dome_\Documents\Programas\C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Categoría.AgregarCategoria.resources
+C:\Users\dome_\Documents\Programas\C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Categoria.ConsultarCategoria.resources
+C:\Users\dome_\Documents\Programas\C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Clientes.ActualizarCliente.resources
+C:\Users\dome_\Documents\Programas\C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Clientes.AgregarCliente.resources
+C:\Users\dome_\Documents\Programas\C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Clientes.ConsultarCliente.resources
+C:\Users\dome_\Documents\Programas\C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.HomeAdministrador.resources
+C:\Users\dome_\Documents\Programas\C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Inventarios.ActualizarMateriaPrima.resources
+C:\Users\dome_\Documents\Programas\C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Inventarios.AgregarNuevaMateriaPrima.resources
+C:\Users\dome_\Documents\Programas\C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Inventarios.ConsultarMateriaPrima.resources
+C:\Users\dome_\Documents\Programas\C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Inventarios.ConsultarProducto.resources
+C:\Users\dome_\Documents\Programas\C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Inventarios.ElaborarMateriaPrima.resources
+C:\Users\dome_\Documents\Programas\C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Producción.ActualizarProducto.resources
+C:\Users\dome_\Documents\Programas\C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Producción.AgregarProducto.resources
+C:\Users\dome_\Documents\Programas\C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Producción.EscogerMateriaPrima.resources
+C:\Users\dome_\Documents\Programas\C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Proveedores.ActualizarProveedor.resources
+C:\Users\dome_\Documents\Programas\C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Proveedores.ConsultarProveedor.resources
+C:\Users\dome_\Documents\Programas\C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Proveedores.AgregarProveedor.resources
+C:\Users\dome_\Documents\Programas\C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Ventas.GenerarOrden.resources
+C:\Users\dome_\Documents\Programas\C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.csproj.GenerateResource.cache
+C:\Users\dome_\Documents\Programas\C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.exe
+C:\Users\dome_\Documents\Programas\C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.pdb
+D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\bin\Debug\SiGIProV1.exe.config
+D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\bin\Debug\SiGIProV1.exe
+D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\bin\Debug\SiGIProV1.pdb
+D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.csprojAssemblyReference.cache
+D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Properties.Resources.resources
+D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Administrador.resources
+D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Categoria.ActualizarCategoria.resources
+D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Categoría.AgregarCategoria.resources
+D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Categoria.ConsultarCategoria.resources
+D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Clientes.ActualizarCliente.resources
+D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Clientes.AgregarCliente.resources
+D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Clientes.ConsultarCliente.resources
+D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.HomeAdministrador.resources
+D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Inventarios.ActualizarMateriaPrima.resources
+D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Inventarios.AgregarNuevaMateriaPrima.resources
+D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Inventarios.ConsultarMateriaPrima.resources
+D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Inventarios.ConsultarProducto.resources
+D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Inventarios.ElaborarMateriaPrima.resources
+D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Producción.ActualizarProducto.resources
+D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Producción.AgregarProducto.resources
+D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Producción.EscogerMateriaPrima.resources
+D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Proveedores.ActualizarProveedor.resources
+D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Proveedores.ConsultarProveedor.resources
+D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Proveedores.AgregarProveedor.resources
+D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Ventas.GenerarOrden.resources
+D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.csproj.GenerateResource.cache
+D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.exe
+D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.pdb
+C:\Users\ALEX\Documents\GitHub\SiGIProV1\SiGIProV1\SiGIProV1\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\ALEX\Documents\GitHub\SiGIProV1\SiGIProV1\SiGIProV1\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\ALEX\Documents\GitHub\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Login.resources
+C:\Users\ALEX\Documents\GitHub\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.csproj.CopyComplete
+C:\Users\dome_\Documents\Programas\C#\SiGIProV1\SiGIProV1\SiGIProV1\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\dome_\Documents\Programas\C#\SiGIProV1\SiGIProV1\SiGIProV1\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\dome_\Documents\Programas\C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Login.resources
+C:\Users\dome_\Documents\Programas\C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.csproj.CopyComplete
+D:\Dome\Programas C#\SiGIProV1\SiGIProV1\SiGIProV1\obj\Debug\SiGIProV1.Vistas.Login.resources

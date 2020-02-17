@@ -117,4 +117,35 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="labelErrorTelefono.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIGNIUk0AAHolAACAgwAA+f8AAIDoAABS
+        CAABFVgAADqXAAAXb9daH5AAAAAJcEhZcwAACxMAAAsTAQCanBgAAAC/SURBVChTbdBBCoJAGIZhzxNC
+        u6KT6CK7SFp4izZBi07QoqALtGgj2CpoG0EokQaRzfx9nzol1eKBmd9XhhlLuQ71YA03ULUcVtAFy0QH
+        kD807KHDcFkOw7BiIq/fjBcMr+UAkY4iUUEgyh+K5HkzvjB81psykjQVvdth7ZuICobFe4CPkiSi4/g7
+        fDBMy405ejyqfsiy5tFnhnPQP5cZeGbNp5oxbMMWeLtPWOFsAzZDasEUTnCvHWECtnId6wVPVAmGEG6e
+        iwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="labelErrorCorreo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIGNIUk0AAHolAACAgwAA+f8AAIDoAABS
+        CAABFVgAADqXAAAXb9daH5AAAAAJcEhZcwAACxMAAAsTAQCanBgAAAC/SURBVChTbdBBCoJAGIZhzxNC
+        u6KT6CK7SFp4izZBi07QoqALtGgj2CpoG0EokQaRzfx9nzol1eKBmd9XhhlLuQ71YA03ULUcVtAFy0QH
+        kD807KHDcFkOw7BiIq/fjBcMr+UAkY4iUUEgyh+K5HkzvjB81psykjQVvdth7ZuICobFe4CPkiSi4/g7
+        fDBMy405ejyqfsiy5tFnhnPQP5cZeGbNp5oxbMMWeLtPWOFsAzZDasEUTnCvHWECtnId6wVPVAmGEG6e
+        iwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="labelErrorRUC.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIGNIUk0AAHolAACAgwAA+f8AAIDoAABS
+        CAABFVgAADqXAAAXb9daH5AAAAAJcEhZcwAACxMAAAsTAQCanBgAAAC/SURBVChTbdBBCoJAGIZhzxNC
+        u6KT6CK7SFp4izZBi07QoqALtGgj2CpoG0EokQaRzfx9nzol1eKBmd9XhhlLuQ71YA03ULUcVtAFy0QH
+        kD807KHDcFkOw7BiIq/fjBcMr+UAkY4iUUEgyh+K5HkzvjB81psykjQVvdth7ZuICobFe4CPkiSi4/g7
+        fDBMy405ejyqfsiy5tFnhnPQP5cZeGbNp5oxbMMWeLtPWOFsAzZDasEUTnCvHWECtnId6wVPVAmGEG6e
+        iwAAAABJRU5ErkJggg==
+</value>
+  </data>
 </root>

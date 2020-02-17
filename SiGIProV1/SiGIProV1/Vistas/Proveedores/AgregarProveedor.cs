@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SiGIProV1.Vistas.Proveedores
@@ -15,6 +8,30 @@ namespace SiGIProV1.Vistas.Proveedores
         public AgregarProveedor()
         {
             InitializeComponent();
+        }
+
+        private void textBoxRuc_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            new Controlador.ControlProveedor().verificarCampoRUC(e, labelErrorRUC, textBoxRuc);
+        }
+
+        private void textBoxNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            new Controlador.ControlProveedor().verificarCampoLetras(e);
+        }
+
+        private void textBoxCorreo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            new Controlador.ControlProveedor().verificarCampoCorreo(labelErrorCorreo, textBoxCorreo);
+        }
+        private void textBoxTelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            new Controlador.ControlProveedor().verificarCampoTelefono(e, labelErrorTelefono);
+        }
+
+        private void bRegistrar_Click(object sender, EventArgs e)
+        {
+            new Controlador.ControlProveedor().agregarProveedor(textBoxRuc, textBoxNombre, textBoxDireccion, textBoxCorreo, textBoxTelefono, labelErrorRUC, labelErrorTelefono, labelErrorCorreo);
         }
     }
 }

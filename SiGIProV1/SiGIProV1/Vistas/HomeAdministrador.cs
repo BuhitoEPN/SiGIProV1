@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SiGIProV1.Controlador;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,12 @@ namespace SiGIProV1.Vistas
 {
     public partial class HomeAdministrador : Form
     {
-        public HomeAdministrador()
+
+        public HomeAdministrador(string user)
         {
             InitializeComponent();
+            new ControladorHome().nombreUsuario(labelSaludo, user);
+
         }
 
         private void horaFecha_Tick(object sender, EventArgs e)

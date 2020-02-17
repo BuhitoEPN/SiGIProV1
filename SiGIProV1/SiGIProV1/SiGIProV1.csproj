@@ -33,8 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,14 +49,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conexion\ConnectionToSql.cs" />
+    <Compile Include="Controlador\ControladorHome.cs" />
     <Compile Include="Controlador\ControladorInterfaz.cs" />
+    <Compile Include="Controlador\ControlLogin.cs" />
+    <Compile Include="Controlador\ControlProveedor.cs" />
+    <Compile Include="Controlador\ControlValidaciones.cs" />
     <Compile Include="Controlador\MenuStripRender.cs" />
-    <Compile Include="Vistas\Administrador.cs">
+    <Compile Include="DAO\DAOProveedor.cs" />
+    <Compile Include="Administrador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\Administrador.Designer.cs">
+    <Compile Include="Administrador.Designer.cs">
       <DependentUpon>Administrador.cs</DependentUpon>
     </Compile>
+    <Compile Include="DAO\DAOUsuario.cs" />
+    <Compile Include="Modelo\Proveedor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vistas\Categoria\ActualizarCategoria.cs">
@@ -128,6 +139,12 @@
     <Compile Include="Vistas\Inventarios\ElaborarMateriaPrima.Designer.cs">
       <DependentUpon>ElaborarMateriaPrima.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Producción\ActualizarProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,7 +196,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Vistas\Administrador.resx">
+    <EmbeddedResource Include="Administrador.resx">
       <DependentUpon>Administrador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Categoria\ActualizarCategoria.resx">
@@ -218,6 +235,9 @@
     <EmbeddedResource Include="Vistas\Inventarios\ElaborarMateriaPrima.resx">
       <DependentUpon>ElaborarMateriaPrima.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Producción\ActualizarProducto.resx">
       <DependentUpon>ActualizarProducto.cs</DependentUpon>
     </EmbeddedResource>
@@ -239,6 +259,9 @@
     <EmbeddedResource Include="Vistas\Ventas\GenerarOrden.resx">
       <DependentUpon>GenerarOrden.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
