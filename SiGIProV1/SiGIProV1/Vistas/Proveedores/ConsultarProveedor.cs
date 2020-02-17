@@ -13,7 +13,12 @@ namespace SiGIProV1.Vistas.Proveedores
 
         private void bBuscar_Click(object sender, EventArgs e)
         {
-            dGVProveedores.DataSource = new Controlador.ControlProveedor().filtroProveedor(comboBoxProveedor.Text, tNombreDelProducto.Text);
+            dGVProveedores.DataSource = new Controlador.ControlProveedor().filtroProveedor(comboBoxProveedor.Text, tNombreDelProducto);
+        }
+
+        private void comboBoxProveedor_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            tNombreDelProducto.Text = "";
         }
     }
 }

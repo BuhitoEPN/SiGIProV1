@@ -49,9 +49,8 @@
             this.panelEscritorio.Controls.Add(this.pictureUsuario);
             this.panelEscritorio.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEscritorio.Location = new System.Drawing.Point(0, 0);
-            this.panelEscritorio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelEscritorio.Name = "panelEscritorio";
-            this.panelEscritorio.Size = new System.Drawing.Size(1440, 750);
+            this.panelEscritorio.Size = new System.Drawing.Size(1080, 609);
             this.panelEscritorio.TabIndex = 7;
             // 
             // labelFecha
@@ -60,12 +59,10 @@
             this.labelFecha.AutoSize = true;
             this.labelFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFecha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(137)))), ((int)(((byte)(200)))));
-            this.labelFecha.Location = new System.Drawing.Point(237, 453);
-            this.labelFecha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelFecha.Location = new System.Drawing.Point(178, 368);
             this.labelFecha.Name = "labelFecha";
-            this.labelFecha.Size = new System.Drawing.Size(209, 76);
+            this.labelFecha.Size = new System.Drawing.Size(0, 63);
             this.labelFecha.TabIndex = 3;
-            this.labelFecha.Text = "label1";
             // 
             // labelSaludo
             // 
@@ -73,10 +70,9 @@
             this.labelSaludo.AutoSize = true;
             this.labelSaludo.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSaludo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
-            this.labelSaludo.Location = new System.Drawing.Point(413, 22);
-            this.labelSaludo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelSaludo.Location = new System.Drawing.Point(310, 18);
             this.labelSaludo.Name = "labelSaludo";
-            this.labelSaludo.Size = new System.Drawing.Size(569, 51);
+            this.labelSaludo.Size = new System.Drawing.Size(449, 41);
             this.labelSaludo.TabIndex = 2;
             this.labelSaludo.Text = "Bienvenido Administrador";
             // 
@@ -86,21 +82,18 @@
             this.labelHora.AutoSize = true;
             this.labelHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(137)))), ((int)(((byte)(200)))));
-            this.labelHora.Location = new System.Drawing.Point(491, 601);
-            this.labelHora.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelHora.Location = new System.Drawing.Point(368, 488);
             this.labelHora.Name = "labelHora";
-            this.labelHora.Size = new System.Drawing.Size(318, 113);
+            this.labelHora.Size = new System.Drawing.Size(0, 91);
             this.labelHora.TabIndex = 1;
-            this.labelHora.Text = "label1";
             // 
             // pictureUsuario
             // 
             this.pictureUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureUsuario.Image = ((System.Drawing.Image)(resources.GetObject("pictureUsuario.Image")));
-            this.pictureUsuario.Location = new System.Drawing.Point(536, 87);
-            this.pictureUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureUsuario.Location = new System.Drawing.Point(402, 71);
             this.pictureUsuario.Name = "pictureUsuario";
-            this.pictureUsuario.Size = new System.Drawing.Size(367, 310);
+            this.pictureUsuario.Size = new System.Drawing.Size(275, 252);
             this.pictureUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureUsuario.TabIndex = 0;
             this.pictureUsuario.TabStop = false;
@@ -112,12 +105,11 @@
             // 
             // HomeAdministrador
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1440, 750);
+            this.ClientSize = new System.Drawing.Size(1080, 609);
             this.Controls.Add(this.panelEscritorio);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "HomeAdministrador";
             this.Text = "HomeAdministrador";
             this.panelEscritorio.ResumeLayout(false);

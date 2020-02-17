@@ -78,7 +78,7 @@ namespace SiGIProV1.Controlador
         //FUNCIÓN QUE BLOQUEA EL SISTEMA:
         private void bloquearSistema(object sender, EventArgs e)
         {
-            msgError("Sistema bloqueado, porfavor espere " + segundos + " segundos.", error);
+            msgError("Sistema bloqueado, por favor espere " + segundos + " segundos.", error);
             if (segundos == 0)
             {
                 error.Visible = false;

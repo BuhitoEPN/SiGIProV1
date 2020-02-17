@@ -38,7 +38,7 @@ namespace SiGIProV1.Controlador
             return new DAOProveedor().listarProveedor();
         }
 
-        public DataTable filtroProveedor(string comboBox, string buscar)
+        public DataTable filtroProveedor(string comboBox, TextBox buscar)
         {
             DAOProveedor daoProveedor = new DAOProveedor();
             
@@ -48,18 +48,19 @@ namespace SiGIProV1.Controlador
                 {
                     MessageBox.Show("Ingrese el RUC del proveedor a buscar.");
                 }
-                return daoProveedor.filtrarRUC(buscar);
+                return daoProveedor.filtrarRUC(buscar.Text);
             }else if (comboBox.Equals("Nombre"))
             {
                 if (buscar.Equals(""))
                 {
                     MessageBox.Show("Ingrese el nombre del proveedor a buscar.");
                 }
-                return daoProveedor.filtrarNombre(buscar);
+                return daoProveedor.filtrarNombre(buscar.Text);
             }
             else
             {
                 MessageBox.Show("Seleccione un filtro para la busqueda.");
+                buscar.Text = "";
                 return listarProveedores();
             }
 
@@ -78,7 +79,7 @@ namespace SiGIProV1.Controlador
             else if (rucBuscar.TextLength < 13)
             {
 
-                MessageBox.Show("El RUC sebe tener 13 caracteres.");
+                MessageBox.Show("No existe el proveedor.");
                 vaciarCamposProveedor(rucBuscar, rucLabel, nombre, direccion, correo, telefono, estado);
             }
             else
@@ -103,7 +104,7 @@ namespace SiGIProV1.Controlador
                 }
                 else
                 {
-                    MessageBox.Show("No se encontró ningún proveedor con el RUC: " + rucBuscar.Text + ".");
+                    MessageBox.Show("No existe el proveedor.");
                     vaciarCamposProveedor(rucBuscar, rucLabel, nombre, direccion, correo, telefono, estado);
                 }
             }
@@ -121,35 +122,33 @@ namespace SiGIProV1.Controlador
         }
 
 
-        public void verificarCampoRUC(KeyPressEventArgs evt, Label error, TextBox ruc)
+        public void verificarCampoRUC(Label error, TextBox ruc)
         {
-            new ControlValidaciones().validarCamposNumericos(evt);
-            if (new DAOProveedor().comprobarRUC(ruc.Text))
+            if (ruc.Text.Length == 13)
             {
-                error.Visible = true;
-                MessageBox.Show("Ya existe un proveedor con el RUC: " + ruc.Text + ".");
+                error.Visible = false;
+                if (!new Controlador.ControlValidaciones().verificarCedula(ruc.Text))
+                {
+                    MessageBox.Show("El RUC: " + ruc.Text + " es incorrecto.");
+                    error.Visible = true;
+                }
+                else
+                {
+                    error.Visible = false;
+                    new DAOProveedor().comprobarRUCError(ruc.Text, error);
+                }
+                    
             }
             else
             {
-                error.Visible = false;
+                error.Visible = true;
             }
         }
-        /*
-        public void verificarCampoRUC(KeyPressEventArgs evt, Label error, TextBox ruc)
+
+        public void verificarCampoNumerosKeyUp(KeyEventArgs e, TextBox ruc)
         {
-            ControlValidaciones controlValidaciones = new ControlValidaciones();
-            controlValidaciones.validarCamposNumericos(evt);
-            daoProveedor = new DAOProveedor();
-            daoProveedor.comprobarRUCError(ruc.Text, error);
-            if (ruc.TextLength < 13)
-            {
-                error.Visible = true;
-            }
-            else
-            {
-                error.Visible = false;
-            }
-        } */
+            new Controlador.ControlValidaciones().validarCamposNumericosKeyUp(e, ruc);
+        }
 
         public void verificarCampoLetras(KeyPressEventArgs evt)
         {
@@ -161,11 +160,23 @@ namespace SiGIProV1.Controlador
             new ControlValidaciones().validarCamposNumericos(evt);
         }
 
-        public void verificarCampoTelefono(KeyPressEventArgs evt, Label error)
+        public void verificarTelefono(TextBox numero, Label error)
         {
-            
-            new ControlValidaciones().validarCamposNumericos(evt);
+            if (numero.Text.Length == 10)
+            {
+                
+                char[] cadena = numero.Text.ToCharArray(0, numero.Text.Length);
+                if (int.Parse(cadena[0].ToString()) == 0 && int.Parse(cadena[1].ToString()) == 9)
+                {
+                    error.Visible = false;
+                }
+                else
+                    error.Visible = true;
+            }
+            else
+                error.Visible = true;
         }
+
 
         public void verificarCampoCorreo(Label error, TextBox correo)
         {
@@ -200,6 +211,7 @@ namespace SiGIProV1.Controlador
                     direccionProveedor.Text = "";
                     telefonoMovil.Text = "";
                     correoElectronico.Text = "";
+                    ruc.Text = "";
                     estado.SelectedIndex = -1;
                 }
             }

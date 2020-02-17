@@ -7,16 +7,40 @@ namespace SiGIProV1.Controlador
     class ControlValidaciones
     {
 
-        public void validarCamposNumericos(KeyPressEventArgs evt)
+        public Boolean validarCamposNumericosCadena(string ruc)
         {
-            char c = evt.KeyChar;
-            if (!(c == 13 || (c > 47 && c < 58) || c == 127 || c == 8 || c > 16 && c < 21))
+            char[] cadena = ruc.ToCharArray(0, ruc.Length);
+
+            for (int i = 0; i < ruc.Length; i++)
             {
-                evt.Handled = true;
-                MessageBox.Show("Solo se permiten números");
+                if (!(cadena[i] == 13 || (cadena[i] > 47 && cadena[i] < 58) || cadena[i] == 127 || cadena[i] == 8 || cadena[i] > 16 && cadena[i] < 21))
+                {
+                    return true;
+                }
             }
 
+            return false;
         }
+        public void validarCamposNumericosKeyUp(KeyEventArgs evt, TextBox ruc)
+        {
+            char cadena = (char)evt.KeyValue;
+            if (!(cadena == 13 || (cadena > 47 && cadena < 58) || cadena == 127 || cadena == 8 || cadena > 16 && cadena < 21))
+            {
+                MessageBox.Show("Solo se permiten números.");
+                ruc.Text = "";
+            }
+        }
+
+        public void validarCamposNumericos(KeyPressEventArgs evt)
+        {
+            char cadena = evt.KeyChar;
+            if (!(cadena == 13 || (cadena > 47 && cadena < 58) || cadena == 127 || cadena == 8 || cadena > 16 && cadena < 21))
+            {
+                evt.Handled = true;
+                MessageBox.Show("Solo se permiten números.");
+            }
+        }
+
 
         public void validarCamposTexto(KeyPressEventArgs evt)
         {
@@ -24,7 +48,7 @@ namespace SiGIProV1.Controlador
             if (!(c == 13 || (c > 64 && c < 91) || (c > 96 && c < 123) || (c > 159 && c < 166) || c == 130 || c == 127 || c >= 0 && c < 33 || c == 193 || c == 201 || c == 205 || c == 211 || c == 218 || c == 'Ñ' || c == 'ñ' || (c > 224 && c < 251)))
             {
                 evt.Handled = true;
-                MessageBox.Show("Solo se permiten letras");
+                MessageBox.Show("Nombre del proveedor ingresado incorrectamente.");
             }
         }
 

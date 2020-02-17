@@ -14,7 +14,6 @@ namespace SiGIProV1.Vistas.Proveedores
         private void bBuscar_Click(object sender, EventArgs e)
         {
             new Controlador.ControlProveedor().buscarProveedor(textBoxRUCBuscar, labelRUC, textBoxNombre, textBoxDireccion, textBoxCorreo, comboBoxEstado, textBoxTelefono);
-
         }
 
         private void bActualizar_Click(object sender, EventArgs e)
@@ -33,14 +32,9 @@ namespace SiGIProV1.Vistas.Proveedores
         }
 
 
-        private void textBoxCorreo_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            new Controlador.ControlProveedor().verificarCampoCorreo(labelErrorCorreoActualizar, textBoxCorreo);
-        }
-
         private void textBoxTelefono_KeyPress(object sender, KeyPressEventArgs e)
         {
-            new Controlador.ControlProveedor().verificarCampoTelefono(e, labelErrorTelefonoActualizar);
+            new Controlador.ControlProveedor().verificarCampoNumeros(e);
         }
 
 
@@ -60,7 +54,7 @@ namespace SiGIProV1.Vistas.Proveedores
             }
             else
             {
-                DialogResult dialogResult = MessageBox.Show("¿Está seguro que desea dar de baja el estado?", "Cambiar Estado", MessageBoxButtons.YesNo);
+                DialogResult dialogResult = MessageBox.Show("¿Está seguro que desea dar de baja el proveedor?", "Cambiar Estado", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
 
@@ -72,5 +66,15 @@ namespace SiGIProV1.Vistas.Proveedores
             }
         }
 
+
+        private void textBoxCorreo_KeyUp(object sender, KeyEventArgs e)
+        {
+            new Controlador.ControlProveedor().verificarCampoCorreo(labelErrorCorreoActualizar, textBoxCorreo);
+        }
+
+        private void textBoxTelefono_KeyUp(object sender, KeyEventArgs e)
+        {
+            new Controlador.ControlProveedor().verificarTelefono(textBoxTelefono, labelErrorTelefonoActualizar);
+        }
     }
 }

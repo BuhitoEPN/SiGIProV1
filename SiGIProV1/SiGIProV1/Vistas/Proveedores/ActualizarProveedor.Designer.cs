@@ -181,11 +181,11 @@
             this.labelErrorTelefonoActualizar.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelErrorTelefonoActualizar.Image = ((System.Drawing.Image)(resources.GetObject("labelErrorTelefonoActualizar.Image")));
             this.labelErrorTelefonoActualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.labelErrorTelefonoActualizar.Location = new System.Drawing.Point(746, 268);
+            this.labelErrorTelefonoActualizar.Location = new System.Drawing.Point(678, 270);
             this.labelErrorTelefonoActualizar.Name = "labelErrorTelefonoActualizar";
-            this.labelErrorTelefonoActualizar.Size = new System.Drawing.Size(172, 17);
+            this.labelErrorTelefonoActualizar.Size = new System.Drawing.Size(248, 17);
             this.labelErrorTelefonoActualizar.TabIndex = 80;
-            this.labelErrorTelefonoActualizar.Text = "     Teléfono móvil no válido.";
+            this.labelErrorTelefonoActualizar.Text = "     Número de teléfono móvil incorrecto.";
             this.labelErrorTelefonoActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.labelErrorTelefonoActualizar.Visible = false;
             // 
@@ -197,11 +197,11 @@
             this.labelErrorCorreoActualizar.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelErrorCorreoActualizar.Image = ((System.Drawing.Image)(resources.GetObject("labelErrorCorreoActualizar.Image")));
             this.labelErrorCorreoActualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.labelErrorCorreoActualizar.Location = new System.Drawing.Point(746, 210);
+            this.labelErrorCorreoActualizar.Location = new System.Drawing.Point(678, 212);
             this.labelErrorCorreoActualizar.Name = "labelErrorCorreoActualizar";
-            this.labelErrorCorreoActualizar.Size = new System.Drawing.Size(126, 17);
+            this.labelErrorCorreoActualizar.Size = new System.Drawing.Size(282, 17);
             this.labelErrorCorreoActualizar.TabIndex = 79;
-            this.labelErrorCorreoActualizar.Text = "     Correo no válido.";
+            this.labelErrorCorreoActualizar.Text = "     Dirección de correo electrónico incorrecto";
             this.labelErrorCorreoActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.labelErrorCorreoActualizar.Visible = false;
             // 
@@ -243,9 +243,9 @@
             this.textBoxCorreo.Location = new System.Drawing.Point(278, 205);
             this.textBoxCorreo.MaxLength = 50;
             this.textBoxCorreo.Name = "textBoxCorreo";
-            this.textBoxCorreo.Size = new System.Drawing.Size(450, 27);
+            this.textBoxCorreo.Size = new System.Drawing.Size(384, 27);
             this.textBoxCorreo.TabIndex = 6;
-            this.textBoxCorreo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxCorreo_KeyPress);
+            this.textBoxCorreo.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxCorreo_KeyUp);
             // 
             // textBoxTelefono
             // 
@@ -258,9 +258,10 @@
             this.textBoxTelefono.Location = new System.Drawing.Point(278, 263);
             this.textBoxTelefono.MaxLength = 10;
             this.textBoxTelefono.Name = "textBoxTelefono";
-            this.textBoxTelefono.Size = new System.Drawing.Size(450, 27);
+            this.textBoxTelefono.Size = new System.Drawing.Size(384, 27);
             this.textBoxTelefono.TabIndex = 7;
             this.textBoxTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxTelefono_KeyPress);
+            this.textBoxTelefono.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxTelefono_KeyUp);
             // 
             // textBoxDireccion
             // 
@@ -273,7 +274,7 @@
             this.textBoxDireccion.Location = new System.Drawing.Point(278, 152);
             this.textBoxDireccion.MaxLength = 50;
             this.textBoxDireccion.Name = "textBoxDireccion";
-            this.textBoxDireccion.Size = new System.Drawing.Size(450, 27);
+            this.textBoxDireccion.Size = new System.Drawing.Size(384, 27);
             this.textBoxDireccion.TabIndex = 5;
             // 
             // textBoxNombre
@@ -287,7 +288,7 @@
             this.textBoxNombre.Location = new System.Drawing.Point(278, 91);
             this.textBoxNombre.MaxLength = 30;
             this.textBoxNombre.Name = "textBoxNombre";
-            this.textBoxNombre.Size = new System.Drawing.Size(450, 27);
+            this.textBoxNombre.Size = new System.Drawing.Size(384, 27);
             this.textBoxNombre.TabIndex = 4;
             this.textBoxNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxNombre_KeyPress);
             // 
